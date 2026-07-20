@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# Locks
+.~lock*
+
+# Dev files
+build_ratings.py
+Argentina_vs_Spain_statsP.csv
+Match_events_AGvsSp.csv
+app.py
