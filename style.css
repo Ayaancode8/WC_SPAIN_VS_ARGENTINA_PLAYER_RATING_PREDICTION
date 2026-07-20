@@ -1,11 +1,11 @@
 /* CSS Design Tokens */
 :root {
-    --bg-main: #08111E;
-    --bg-sidebar: #121B2B;
-    --card-bg: rgba(18, 27, 43, 0.75);
-    --card-bg-solid: #121B2B;
-    --card-border: #1F3147;
-    --card-border-active: rgba(31, 49, 71, 0.8);
+    --bg-main: #0C0C0C;
+    --bg-sidebar: rgba(12, 12, 12, 0.85);
+    --card-bg: rgba(12, 12, 12, 0.60);
+    --card-bg-solid: #0C0C0C;
+    --card-border: rgba(255, 255, 255, 0.07);
+    --card-border-active: rgba(255, 255, 255, 0.18);
     
     /* Brand & Accent Colors */
     --spain-red: #C8102E;
@@ -30,7 +30,7 @@
     /* Transitions & Shadow */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-quick: all 0.15s ease;
-    --glow-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    --glow-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
     --font-outfit: 'Outfit', sans-serif;
 }
 
@@ -43,7 +43,7 @@
 
 body {
     background-color: var(--bg-main);
-    background-image: linear-gradient(rgba(8, 17, 30, 0.65), rgba(8, 17, 30, 0.80)), url('edited-photo.png');
+    background-image: linear-gradient(rgba(12, 12, 12, 0.55), rgba(12, 12, 12, 0.75)), url('edited-photo.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
