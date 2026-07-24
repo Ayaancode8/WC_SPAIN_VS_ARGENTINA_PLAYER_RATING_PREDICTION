@@ -10,10 +10,10 @@
     /* Brand & Accent Colors */
     --spain-red: #C8102E;
     --spain-red-glow: rgba(200, 16, 46, 0.35);
-    --arg-blue: #6EC6FF;
-    --arg-blue-glow: rgba(110, 198, 255, 0.35);
-    --accent-gold: #F6C453;
-    --accent-gold-glow: rgba(246, 196, 83, 0.35);
+    --arg-blue: #5B84A8;
+    --arg-blue-glow: rgba(91, 132, 168, 0.35);
+    --accent-gold: #C9A227;
+    --accent-gold-glow: rgba(201, 162, 39, 0.35);
     --accent-emerald: #2ECC71;
     
     /* Pitch Colors */
@@ -33,7 +33,7 @@
     --glow-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
     --font-outfit: 'Outfit', sans-serif;
     --home-color: #C8102E;
-    --away-color: #6EC6FF;
+    --away-color: #5B84A8;
 }
 
 /* Base Styles */
@@ -1101,8 +1101,8 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: rgba(246, 196, 83, 0.12);
-    border: 1px solid rgba(246, 196, 83, 0.3);
+    background: rgba(201, 162, 39, 0.12);
+    border: 1px solid rgba(201, 162, 39, 0.3);
     color: var(--accent-gold);
     font-family: var(--font-outfit);
     font-size: 0.85rem;
@@ -1113,7 +1113,7 @@ body {
     transition: var(--transition-quick);
 }
 .mobile-sidebar-back-btn:hover {
-    background: rgba(246, 196, 83, 0.25);
+    background: rgba(201, 162, 39, 0.25);
 }
 
 /* Responsive Styling */
@@ -1295,7 +1295,7 @@ body {
 .navbar-tabs { display: flex; gap: 0.25rem; background: rgba(255,255,255,0.03); border: 1px solid var(--card-border); padding: 0.25rem; border-radius: 0.6rem; }
 .nav-tab { display: flex; align-items: center; gap: 0.45rem; background: transparent; border: none; color: var(--text-secondary); padding: 0.5rem 1.2rem; font-family: var(--font-outfit); font-size: 0.85rem; font-weight: 600; cursor: pointer; border-radius: 0.4rem; transition: var(--transition-quick); }
 .nav-tab:hover { color: var(--text-contrast); }
-.nav-tab.active { background: rgba(246,196,83,0.12); color: var(--accent-gold); border: 1px solid rgba(246,196,83,0.2); }
+.nav-tab.active { background: rgba(201,162,39,0.12); color: var(--accent-gold); border: 1px solid rgba(201,162,39,0.2); }
 .nav-tab svg { opacity: 0.7; }
 .nav-tab.active svg { opacity: 1; }
 
@@ -1338,10 +1338,10 @@ body {
     border-color: rgba(255, 255, 255, 0.2);
 }
 .bracket-chip.active {
-    background: rgba(246, 196, 83, 0.15);
+    background: rgba(201, 162, 39, 0.15);
     color: var(--accent-gold);
-    border-color: rgba(246, 196, 83, 0.35);
-    box-shadow: 0 0 10px rgba(246, 196, 83, 0.15);
+    border-color: rgba(201, 162, 39, 0.35);
+    box-shadow: 0 0 10px rgba(201, 162, 39, 0.15);
 }
 .bracket-mobile-hint {
     display: none;
@@ -1363,7 +1363,7 @@ body {
 .bracket-round-title {
     text-align: center; font-size: 0.75rem; font-weight: 700; text-transform: uppercase;
     letter-spacing: 0.08em; color: var(--accent-gold); margin-bottom: 0.75rem;
-    padding: 0.4rem 0.6rem; background: rgba(246,196,83,0.08); border: 1px solid rgba(246,196,83,0.15);
+    padding: 0.4rem 0.6rem; background: rgba(201,162,39,0.08); border: 1px solid rgba(201,162,39,0.15);
     border-radius: 0.4rem;
 }
 .bracket-matches {
@@ -1419,8 +1419,8 @@ body {
 .matches-table tbody tr:hover { background: rgba(255,255,255,0.02); }
 .match-round-pill {
     display: inline-block; font-size: 0.75rem; font-weight: 600; padding: 0.2rem 0.6rem;
-    border-radius: 10rem; background: rgba(246,196,83,0.1); color: var(--accent-gold);
-    border: 1px solid rgba(246,196,83,0.2);
+    border-radius: 10rem; background: rgba(201,162,39,0.1); color: var(--accent-gold);
+    border: 1px solid rgba(201,162,39,0.2);
 }
 .match-team-cell { display: flex; align-items: center; gap: 0.5rem; font-weight: 500; }
 .match-team-cell .team-flag { font-size: 1.2rem; }
@@ -1511,8 +1511,8 @@ body {
     font-size: 0.8rem;
     font-weight: 600;
     color: var(--accent-gold);
-    background: rgba(246, 196, 83, 0.08);
-    border: 1px solid rgba(246, 196, 83, 0.2);
+    background: rgba(201, 162, 39, 0.08);
+    border: 1px solid rgba(201, 162, 39, 0.2);
     padding: 0.35rem 0.8rem;
     border-radius: 0.4rem;
 }
@@ -1686,7 +1686,7 @@ body {
 }
 .player-rating-card:hover, .player-rating-card.selected {
     border-color: var(--accent-gold);
-    background: rgba(246, 196, 83, 0.05);
+    background: rgba(201, 162, 39, 0.05);
     box-shadow: 0 4px 16px rgba(0,0,0,0.4);
 }
 .player-card-top {
@@ -1770,10 +1770,10 @@ body {
     backdrop-filter: blur(8px);
 }
 .winner-badge.highlight-winner {
-    background: rgba(255, 215, 0, 0.15);
-    color: #ffd700;
-    border: 1px solid rgba(255, 215, 0, 0.4);
-    box-shadow: 0 0 12px rgba(255, 215, 0, 0.2);
+    background: rgba(201, 162, 39, 0.15);
+    color: #C9A227;
+    border: 1px solid rgba(201, 162, 39, 0.4);
+    box-shadow: 0 0 12px rgba(201, 162, 39, 0.2);
 }
 .winner-badge.tie-winner {
     background: rgba(255, 255, 255, 0.08);
@@ -1791,9 +1791,9 @@ body {
     font-weight: 600;
 }
 .table-winner-badge.win {
-    background: rgba(255, 215, 0, 0.12);
-    color: #ffd700;
-    border: 1px solid rgba(255, 215, 0, 0.3);
+    background: rgba(201, 162, 39, 0.12);
+    color: #C9A227;
+    border: 1px solid rgba(201, 162, 39, 0.3);
 }
 .table-winner-badge.tie {
     background: rgba(255, 255, 255, 0.06);
@@ -1822,8 +1822,8 @@ body {
     position: absolute;
     top: 24px;
     right: 24px;
-    background: rgba(255, 215, 0, 0.1);
-    border: 1px solid rgba(255, 215, 0, 0.3);
+    background: rgba(201, 162, 39, 0.1);
+    border: 1px solid rgba(201, 162, 39, 0.3);
     padding: 4px 14px;
     border-radius: 14px;
     font-size: 0.75rem;
@@ -1834,7 +1834,7 @@ body {
 .coming-soon-icon {
     font-size: 4rem;
     margin-bottom: 20px;
-    filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.3));
+    filter: drop-shadow(0 0 20px rgba(201, 162, 39, 0.3));
     animation: floatIcon 3s ease-in-out infinite;
 }
 @keyframes floatIcon {
@@ -1849,7 +1849,7 @@ body {
 }
 .coming-soon-tag {
     display: inline-block;
-    background: linear-gradient(135deg, #ffd700, #ff8c00);
+    background: linear-gradient(135deg, #C9A227, #8C5A1E);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 1.4rem;
