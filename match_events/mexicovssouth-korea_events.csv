@@ -1,0 +1,18 @@
+timeStr,type,overloadTime,eventId,homeScore,awayScore,profileUrl,isHome,fullName,playerId,card,cardDescription,minutesAddedStr,minutesAddedKey,minutesAddedInput,halfStrShort,halfStrKey,ownGoal,goalDescription,isPenaltyShootoutEvent,newScore,penShootoutScore,assistStr,assistProfileUrl,shotmapEvent.id,shotmapEvent.eventType,shotmapEvent.teamId,shotmapEvent.playerId,shotmapEvent.playerName,shotmapEvent.x,shotmapEvent.y,shotmapEvent.min,shotmapEvent.minAdded,shotmapEvent.isBlocked,shotmapEvent.isOnTarget,shotmapEvent.blockedX,shotmapEvent.blockedY,shotmapEvent.goalCrossedY,shotmapEvent.goalCrossedZ,shotmapEvent.expectedGoals,shotmapEvent.expectedGoalsOnTarget,shotmapEvent.shotType,shotmapEvent.situation,shotmapEvent.period,shotmapEvent.isOwnGoal,shotmapEvent.onGoalShot.x,shotmapEvent.onGoalShot.y,shotmapEvent.onGoalShot.zoomRatio,shotmapEvent.isSavedOffLine,shotmapEvent.isFromInsideBox,shotmapEvent.keeperId,shotmapEvent.firstName,shotmapEvent.lastName,shotmapEvent.fullName,shotmapEvent.teamColor,injuredPlayerOut,substitution_name,substitution_id,substitution_profileUrl
+4,Card,,14207425.0,0,0,/players/940976/kang-lee,False,Kang-In Lee,940976.0,Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+45,AddedTime,,,0,0,,,,,,,+ 4 minutes added,added_injury_time,4.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+45,Half,,,0,0,,,,,,,,,,HT,halftime_short,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+50,Goal,,14207475.0,0,0,/players/921174/luis-romo,True,Luis Romo,921174.0,,,,,,,,,,False,"[1, 0]",,,,2944939431.0,Goal,6710.0,921174.0,Luis Romo,92.3,35.29625000000001,50.0,,False,True,,,34.7625,0.6099999970000001,0.06938135623931885,0.2172350287437439,RightFoot,RegularPlay,SecondHalf,False,0.7982804232804226,0.16137566058201058,1.0,False,True,167247.0,Luis,Romo,Luis Romo,#00634b,,,,
+57,Substitution,0.0,,1,0,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Hee-Chan Hwang,620026,/players/620026/hee-chan-hwang
+57,Substitution,0.0,,1,0,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Hyeon-Gyu Oh,1044299,/players/1044299/hyeon-gyu-oh
+58,Card,,14207480.0,1,0,/players/848102/seung-ho-paik,False,Seung-Ho Paik,848102.0,Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+71,Substitution,0.0,,1,0,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Orbelín Pineda,559986,/players/559986/orbelin-pineda
+71,Substitution,0.0,,1,0,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Obed Vargas,1254394,/players/1254394/obed-vargas
+71,Substitution,0.0,,1,0,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Ji-Sung Eom,1107283,/players/1107283/ji-sung-eom
+71,Substitution,0.0,,1,0,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Hyun-Jun Yang,1232560,/players/1232560/hyun-jun-yang
+77,Substitution,0.0,,1,0,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Gue-Sung Cho,1026781,/players/1026781/gue-sung-cho
+80,Substitution,0.0,,1,0,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Santiago Giménez,954092,/players/954092/santiago-gimenez
+80,Substitution,0.0,,1,0,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Israel Reyes,1074586,/players/1074586/israel-reyes
+84,Substitution,0.0,,1,0,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,César Huerta,977404,/players/977404/cesar-huerta
+90,AddedTime,,,1,0,,,,,,,+ 6 minutes added,added_injury_time,6.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+90,Half,,,1,0,,,,,,,,,,FT,fulltime_short,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

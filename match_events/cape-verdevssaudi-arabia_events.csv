@@ -1,0 +1,19 @@
+timeStr,type,overloadTime,eventId,homeScore,awayScore,profileUrl,isHome,fullName,playerId,card,cardDescription,injuredPlayerOut,minutesAddedStr,minutesAddedKey,minutesAddedInput,halfStrShort,halfStrKey,substitution_name,substitution_id,substitution_profileUrl
+4,Card,,14215194.0,0,0,/players/1002617/saud-abdulhamid,False,Saud Abdulhamid,1002617.0,Yellow,,,,,,,,,,
+8,Card,,14215196.0,0,0,/players/1460591/wagner-pina,True,Wagner Pina,1460591.0,Yellow,,,,,,,,,,
+33,Substitution,0.0,,0,0,,False,,,,,True,,,,,,Ali Lajami,640284,/players/640284/ali-lajami
+45,AddedTime,,,0,0,,,,,,,,+ 6 minutes added,added_injury_time,6.0,,,,,
+45,Half,,,0,0,,,,,,,,,,,HT,halftime_short,,,
+46,Substitution,0.0,,0,0,,False,,,,,False,,,,,,Musab Al-Juwayr,1235341,/players/1235341/musab-al-juwayr
+61,Substitution,0.0,,0,0,,True,,,,,False,,,,,,Nuno da Costa,671326,/players/671326/nuno-da-costa
+61,Substitution,0.0,,0,0,,True,,,,,False,,,,,,Hélio Varela,1524518,/players/1524518/helio-varela
+65,Substitution,0.0,,0,0,,False,,,,,False,,,,,,Mohammed Abu Al Shamat,1543647,/players/1543647/mohammed-abu-al-shamat
+65,Substitution,0.0,,0,0,,False,,,,,False,,,,,,Abdullah Al-Hamdan,909198,/players/909198/abdullah-al-hamdan
+67,Card,,14215237.0,0,0,/players/848612/nasser-al-dawsari,False,Nasser Al-Dawsari,848612.0,Yellow,,,,,,,,,,
+71,Substitution,0.0,,0,0,,True,,,,,False,,,,,,Laros Duarte,665167,/players/665167/laros-duarte
+71,Substitution,0.0,,0,0,,True,,,,,False,,,,,,Garry Rodrigues,302912,/players/302912/garry-rodrigues
+82,Substitution,0.0,,0,0,,False,,,,,False,,,,,,Moteb Al-Harbi,1138003,/players/1138003/moteb-al-harbi
+90,AddedTime,,,0,0,,,,,,,,+ 5 minutes added,added_injury_time,5.0,,,,,
+90 + 3,Card,3.0,14215254.0,0,0,/players/844226/firas-al-buraikan,False,Firas Al-Buraikan,844226.0,Yellow,,,,,,,,,,
+90 + 4,Substitution,4.0,,0,0,,True,,,,,False,,,,,,Steven Moreira,444000,/players/444000/steven-moreira
+90,Half,,,0,0,,,,,,,,,,,FT,fulltime_short,,,

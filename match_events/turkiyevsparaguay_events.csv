@@ -1,0 +1,20 @@
+timeStr,type,overloadTime,eventId,homeScore,awayScore,profileUrl,isHome,ownGoal,goalDescription,isPenaltyShootoutEvent,fullName,playerId,newScore,penShootoutScore,assistStr,assistProfileUrl,assistPlayerId,assistKey,assistInput,shotmapEvent.id,shotmapEvent.eventType,shotmapEvent.teamId,shotmapEvent.playerId,shotmapEvent.playerName,shotmapEvent.x,shotmapEvent.y,shotmapEvent.min,shotmapEvent.minAdded,shotmapEvent.isBlocked,shotmapEvent.isOnTarget,shotmapEvent.blockedX,shotmapEvent.blockedY,shotmapEvent.goalCrossedY,shotmapEvent.goalCrossedZ,shotmapEvent.expectedGoals,shotmapEvent.expectedGoalsOnTarget,shotmapEvent.shotType,shotmapEvent.situation,shotmapEvent.period,shotmapEvent.isOwnGoal,shotmapEvent.onGoalShot.x,shotmapEvent.onGoalShot.y,shotmapEvent.onGoalShot.zoomRatio,shotmapEvent.isSavedOffLine,shotmapEvent.isFromInsideBox,shotmapEvent.keeperId,shotmapEvent.firstName,shotmapEvent.lastName,shotmapEvent.fullName,shotmapEvent.teamColor,card,cardDescription,minutesAddedStr,minutesAddedKey,minutesAddedInput,halfStrShort,halfStrKey,injuredPlayerOut,cardDescription.localizedKey,cardDescription.defaultText,substitution_name,substitution_id,substitution_profileUrl
+2,Goal,,14208192.0,0,0,/players/1241957/matias-galarza,False,,,False,Matías Galarza,1241957.0,"[0, 1]",,assist by Julio Enciso,/players/1073742/julio-enciso,1073742.0,assist_by,Julio Enciso,2945003257.0,Goal,6724.0,1241957.0,Matías Galarza,80.79563106879999,35.143750000000004,2.0,,False,True,,,30.492499999999996,0.1219999994,0.03162543103098869,0.1484871655702591,LeftFoot,RegularPlay,FirstHalf,False,1.9279100529100548,0.032275132116402115,1.0,False,False,603669.0,Matías,Galarza,Matías Galarza,#EE3F2D,,,,,,,,,,,,,
+4,Card,,14208194.0,0,1,/players/1241957/matias-galarza,False,,,,Matías Galarza,1241957.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Yellow,,,,,,,,,,,,
+45,AddedTime,,,0,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,+ 6 minutes added,added_injury_time,6.0,,,,,,,,
+45 + 3,Card,3.0,14208207.0,0,1,/players/442277/miguel-almiron,False,,,,Miguel Almirón,442277.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Red,,,,,,,,,,,,
+45,Half,,,0,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,HT,halftime_short,,,,,,
+46,Substitution,0.0,,0,1,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,,,Damián Bobadilla,1252913,/players/1252913/damian-bobadilla
+46,Substitution,0.0,,0,1,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,,,Baris Alper Yilmaz,890232,/players/890232/baris-alper-yilmaz
+60,Substitution,0.0,,0,1,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,,,Deniz Gül,1406300,/players/1406300/deniz-gul
+60,Substitution,0.0,,0,1,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,,,Can Uzun,1367924,/players/1367924/can-uzun
+63,Card,,14208225.0,0,1,/players/30286/vincenzo-montella,True,,,,Vincenzo Montella,30286.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Yellow,,,,,,,,coach,Coach,,,
+67,Substitution,0.0,,0,1,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,True,,,Gustavo Velázquez,497352,/players/497352/gustavo-velazquez
+71,Substitution,0.0,,0,1,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,,,Eren Elmali,1041660,/players/1041660/eren-elmali
+71,Card,,14208230.0,0,1,/players/1041660/eren-elmali,True,,,,Eren Elmali,1041660.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Yellow,,,,,,,,,,,,
+81,Substitution,0.0,,0,1,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,,,Alexandro Maidana,1736527,/players/1736527/alexandro-maidana
+86,Substitution,0.0,,0,1,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,,,Orkun Kökcü,935409,/players/935409/orkun-kokcu
+90,AddedTime,,,0,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,+ 7 minutes added,added_injury_time,7.0,,,,,,,,
+90 + 1,Substitution,1.0,,0,1,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,True,,,Gabriel Ávalos,425711,/players/425711/gabriel-avalos
+90 + 1,Substitution,1.0,,0,1,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,True,,,José Canale,860890,/players/860890/jose-canale
+90,Half,,,0,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FT,fulltime_short,,,,,,

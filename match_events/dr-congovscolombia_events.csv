@@ -1,0 +1,17 @@
+timeStr,type,overloadTime,homeScore,awayScore,minutesAddedStr,minutesAddedKey,minutesAddedInput,halfStrShort,halfStrKey,profileUrl,isHome,injuredPlayerOut,eventId,fullName,playerId,card,cardDescription,ownGoal,goalDescription,isPenaltyShootoutEvent,newScore,penShootoutScore,assistStr,assistProfileUrl,assistPlayerId,assistKey,assistInput,shotmapEvent.id,shotmapEvent.eventType,shotmapEvent.teamId,shotmapEvent.playerId,shotmapEvent.playerName,shotmapEvent.x,shotmapEvent.y,shotmapEvent.min,shotmapEvent.minAdded,shotmapEvent.isBlocked,shotmapEvent.isOnTarget,shotmapEvent.blockedX,shotmapEvent.blockedY,shotmapEvent.goalCrossedY,shotmapEvent.goalCrossedZ,shotmapEvent.expectedGoals,shotmapEvent.expectedGoalsOnTarget,shotmapEvent.shotType,shotmapEvent.situation,shotmapEvent.period,shotmapEvent.isOwnGoal,shotmapEvent.onGoalShot.x,shotmapEvent.onGoalShot.y,shotmapEvent.onGoalShot.zoomRatio,shotmapEvent.isSavedOffLine,shotmapEvent.isFromInsideBox,shotmapEvent.keeperId,shotmapEvent.firstName,shotmapEvent.lastName,shotmapEvent.fullName,shotmapEvent.teamColor,substitution_name,substitution_id,substitution_profileUrl
+45,AddedTime,,0,0,+ 5 minutes added,added_injury_time,5.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+45,Half,,0,0,,,,HT,halftime_short,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+46,Substitution,0.0,0,0,,,,,,,False,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Noah Sadiki,1359649,/players/1359649/noah-sadiki
+56,Card,,0,0,,,,,,/players/860913/jhon-lucumi,True,,14213426.0,Jhon Lucumí,860913.0,Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+57,Substitution,0.0,0,0,,,,,,,False,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Simon Banza,696932,/players/696932/simon-banza
+58,Substitution,0.0,0,0,,,,,,,True,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Juan Quintero,207617,/players/207617/juan-quintero
+58,Substitution,0.0,0,0,,,,,,,True,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Jhon Córdoba,291425,/players/291425/jhon-cordoba
+71,Substitution,0.0,0,0,,,,,,,False,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Joris Kayembe Ditu,500932,/players/500932/joris-kayembe-ditu
+71,Substitution,0.0,0,0,,,,,,,False,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Charles Pickel,743720,/players/743720/charles-pickel
+76,Goal,,0,0,,,,,,/players/859282/daniel-munoz,True,,14213437.0,Daniel Muñoz,859282.0,,,,,False,"[1, 0]",,assist by Juan Quintero,/players/207617/juan-quintero,207617.0,assist_by,Juan Quintero,2945332837.0,Goal,8258.0,859282.0,Daniel Muñoz,92.5,22.247643316,76.0,,False,True,,,31.331249999999997,0.2439999988,0.06723375618457794,0.5850250720977783,LeftFoot,RegularPlay,SecondHalf,False,1.7060185185185193,0.06455026423280423,1.0,False,True,912286.0,Daniel,Muñoz,Daniel Muñoz,#dd9d0b,,,
+77,Substitution,0.0,1,0,,,,,,,True,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Richard Ríos,1174630,/players/1174630/richard-rios
+82,Substitution,0.0,1,0,,,,,,,False,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Nathanaël Mbuku,1049799,/players/1049799/nathanael-mbuku
+90,AddedTime,,1,0,+ 6 minutes added,added_injury_time,6.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+90 + 3,Card,3.0,1,0,,,,,,/players/743720/charles-pickel,False,,14213444.0,Charles Pickel,743720.0,Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+90 + 4,Card,4.0,1,0,,,,,,/players/466672/jefferson-lerma,True,,14213443.0,Jefferson Lerma,466672.0,Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+90,Half,,1,0,,,,FT,fulltime_short,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

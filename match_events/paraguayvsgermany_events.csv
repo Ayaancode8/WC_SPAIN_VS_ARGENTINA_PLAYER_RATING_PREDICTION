@@ -1,0 +1,30 @@
+timeStr,type,overloadTime,eventId,homeScore,awayScore,profileUrl,isHome,ownGoal,goalDescription,isPenaltyShootoutEvent,fullName,playerId,newScore,penShootoutScore,assistStr,assistProfileUrl,assistPlayerId,assistKey,assistInput,shotmapEvent.id,shotmapEvent.eventType,shotmapEvent.teamId,shotmapEvent.playerId,shotmapEvent.playerName,shotmapEvent.x,shotmapEvent.y,shotmapEvent.min,shotmapEvent.minAdded,shotmapEvent.isBlocked,shotmapEvent.isOnTarget,shotmapEvent.blockedX,shotmapEvent.blockedY,shotmapEvent.goalCrossedY,shotmapEvent.goalCrossedZ,shotmapEvent.expectedGoals,shotmapEvent.expectedGoalsOnTarget,shotmapEvent.shotType,shotmapEvent.situation,shotmapEvent.period,shotmapEvent.isOwnGoal,shotmapEvent.onGoalShot.x,shotmapEvent.onGoalShot.y,shotmapEvent.onGoalShot.zoomRatio,shotmapEvent.isSavedOffLine,shotmapEvent.isFromInsideBox,shotmapEvent.keeperId,shotmapEvent.firstName,shotmapEvent.lastName,shotmapEvent.fullName,shotmapEvent.teamColor,minutesAddedStr,minutesAddedKey,minutesAddedInput,halfStrShort,halfStrKey,injuredPlayerOut,card,cardDescription,VAR.pendingDecision,VAR.decision.key,VAR.decision.value,cardDescription.localizedKey,cardDescription.defaultText,addedTime,penaltyScore,VAR,substitution_name,substitution_id,substitution_profileUrl
+42,Goal,,14219084.0,0,0,/players/1073742/julio-enciso,False,,Header,False,Julio Enciso,1073742.0,"[0, 1]",,assist by Matías Galarza,/players/1241957/matias-galarza,1241957.0,assist_by,Matías Galarza,2945819247.0,Goal,6724.0,1073742.0,Julio Enciso,95.15789473550001,33.695,42.0,,False,True,,,35.83,0.9374736796,0.07442489266395569,0.27146199345588684,Header,FromCorner,FirstHalf,False,0.5158730158730164,0.24800890994708993,1.0,False,True,27299.0,Julio,Enciso,Julio Enciso,#EE3F2D,,,,,,,,,,,,,,,,,,,
+45,AddedTime,,,0,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,+ 5 minutes added,added_injury_time,5.0,,,,,,,,,,,,,,,,
+45,Half,,,0,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,HT,halftime_short,,,,,,,,,,,,,,
+46,Substitution,0.0,,0,1,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,,,,,,,,,,,Leon Goretzka,343748,/players/343748/leon-goretzka
+54,Goal,,14219090.0,0,1,/players/749736/kai-havertz,True,,Header,False,Kai Havertz,749736.0,"[1, 1]",,assist by Florian Wirtz,/players/1152455/florian-wirtz,1152455.0,assist_by,Florian Wirtz,2945819977.0,Goal,8570.0,749736.0,Kai Havertz,94.38596491070001,35.6775,54.0,,False,True,,,31.026249999999997,0.6485263126,0.03393787518143654,0.34467142820358276,Header,RegularPlay,SecondHalf,False,1.7867063492063497,0.17156780756613757,1.0,False,True,1683391.0,Kai,Havertz,Kai Havertz,#464646,,,,,,,,,,,,,,,,,,,
+55,Substitution,0.0,,1,1,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,,,,,,,,,,,Gustavo Caballero,1347933,/players/1347933/gustavo-caballero
+57,Substitution,0.0,,1,1,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,True,,,,,,,,,,,Mauricio,1059490,/players/1059490/mauricio
+63,Substitution,0.0,,1,1,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,,,,,,,,,,,Jamal Musiala,1156141,/players/1156141/jamal-musiala
+65,Card,,14219099.0,1,1,/players/529625/andres-cubas,False,,,,Andrés Cubas,529625.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Yellow,,,,,,,,,,,,
+79,Substitution,0.0,,1,1,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,,,,,,,,,,,Waldemar Anton,664970,/players/664970/waldemar-anton
+88,Substitution,0.0,,1,1,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,,,,,,,,,,,Nick Woltemade,1106563,/players/1106563/nick-woltemade
+90,AddedTime,,,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,+ 5 minutes added,added_injury_time,5.0,,,,,,,,,,,,,,,,
+90,Half,,,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FT,fulltime_short,,,,,,,,,,,,,,
+91,Substitution,0.0,,1,1,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,,,,,,,,,,,Gustavo Velázquez,497352,/players/497352/gustavo-velazquez
+99,Substitution,0.0,,1,1,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,,,,,,,,,,,Braian Ojeda,1075065,/players/1075065/braian-ojeda
+99,Substitution,0.0,,1,1,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,,,,,,,,,,,Antonio Sanabria,474448,/players/474448/antonio-sanabria
+102,VAR,,14219111.0,1,1,/players/469700/jonathan-tah,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,"['var_goal_cancelled', 'foul']","['Goal ruled out', 'foul']",,,,,,,,
+105,Card,,14219114.0,1,1,/players/306380/gustavo-alfaro,False,,,,Gustavo Alfaro,306380.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Yellow,,,,,coach,Coach,,,,,,
+105,AddedTime,,,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,+ 4 minutes added,added_injury_time,4.0,,,,,,,,,,,,,,,,
+105 + 1,Card,1.0,14219113.0,1,1,/players/36567/julian-nagelsmann,True,,,,Julian Nagelsmann,36567.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Yellow,,,,,coach,Coach,,,,,,
+106,Card,,14219115.0,1,1,/players/749736/kai-havertz,True,,,,Kai Havertz,749736.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Yellow,,,,,,,,,,,,
+110,Substitution,0.0,,1,1,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,,,,,,,,,,,Malick Thiaw,1137407,/players/1137407/malick-thiaw
+110,Substitution,0.0,,1,1,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,,,,,,,,,,,Nadiem Amiri,614449,/players/614449/nadiem-amiri
+115,Card,,14219120.0,1,1,/players/1156141/jamal-musiala,True,,,,Jamal Musiala,1156141.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Yellow,,,,,,,,,,,,
+117,Card,,14219121.0,1,1,/players/1241957/matias-galarza,False,,,,Matías Galarza,1241957.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Yellow,,,,,,,,,,,,
+120,AddedTime,,,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,+ 2 minutes added,added_injury_time,2.0,,,,,,,,,,,,,,,,
+120 + 2,Substitution,2.0,,1,1,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,,,,,,,,,,,Fabián Balbuena,307438,/players/307438/fabian-balbuena
+120,Half,,,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,AET,afterextratime_short,,,,,,,,,,,,,,
+,PenaltyShootout,,,4,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"[3, 4]",,,,

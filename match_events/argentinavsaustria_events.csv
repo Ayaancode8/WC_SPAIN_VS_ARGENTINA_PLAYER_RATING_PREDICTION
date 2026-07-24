@@ -1,0 +1,22 @@
+timeStr,type,overloadTime,eventId,homeScore,awayScore,profileUrl,isHome,isPenaltyShootoutEvent,penShootoutScore,ownGoal,goalDescription,fullName,playerId,newScore,assistStr,assistProfileUrl,assistPlayerId,assistKey,assistInput,shotmapEvent.id,shotmapEvent.eventType,shotmapEvent.teamId,shotmapEvent.playerId,shotmapEvent.playerName,shotmapEvent.x,shotmapEvent.y,shotmapEvent.min,shotmapEvent.minAdded,shotmapEvent.isBlocked,shotmapEvent.isOnTarget,shotmapEvent.blockedX,shotmapEvent.blockedY,shotmapEvent.goalCrossedY,shotmapEvent.goalCrossedZ,shotmapEvent.expectedGoals,shotmapEvent.expectedGoalsOnTarget,shotmapEvent.shotType,shotmapEvent.situation,shotmapEvent.period,shotmapEvent.isOwnGoal,shotmapEvent.onGoalShot.x,shotmapEvent.onGoalShot.y,shotmapEvent.onGoalShot.zoomRatio,shotmapEvent.isSavedOffLine,shotmapEvent.isFromInsideBox,shotmapEvent.keeperId,shotmapEvent.firstName,shotmapEvent.lastName,shotmapEvent.fullName,shotmapEvent.teamColor,card,cardDescription,minutesAddedStr,minutesAddedKey,minutesAddedInput,halfStrShort,halfStrKey,injuredPlayerOut,substitution_name,substitution_id,substitution_profileUrl
+9,MissedPenalty,,14212557.0,0,0,/players/30981/lionel-messi,True,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+38,Goal,,14212579.0,0,0,/players/30981/lionel-messi,True,False,,,,Lionel Messi,30981.0,"[1, 0]",assist by Facundo Medina,/players/812652/facundo-medina,812652.0,assist_by,Facundo Medina,2945236701.0,Goal,6706.0,30981.0,Lionel Messi,90.8,35.9825,38.0,,False,True,,,36.21125,0.7319999964,0.23929917812347412,0.316021203994751,LeftFoot,FastBreak,FirstHalf,False,0.41501322751322767,0.19365079269841268,1.0,False,True,450739.0,Lionel,Messi,Lionel Messi,#63addf,,,,,,,,,,,
+40,Card,,14212583.0,1,0,/players/557325/stefan-posch,False,,,,,Stefan Posch,557325.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Yellow,,,,,,,,,,
+45,AddedTime,,,1,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,+ 7 minutes added,added_injury_time,7.0,,,,,,
+45,Half,,,1,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,HT,halftime_short,,,,
+57,Substitution,0.0,,1,0,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,True,Nicolás Otamendi,174321,/players/174321/nicolas-otamendi
+64,Substitution,0.0,,1,0,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Nicolás González,841672,/players/841672/nicolas-gonzalez
+64,Substitution,0.0,,1,0,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Julián Álvarez,974753,/players/974753/julian-alvarez
+67,Substitution,0.0,,1,0,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Marko Arnautovic,110148,/players/110148/marko-arnautovic
+67,Substitution,0.0,,1,0,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Alexander Prass,1027194,/players/1027194/alexander-prass
+67,Substitution,0.0,,1,0,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Marco Friedl,767789,/players/767789/marco-friedl
+76,Card,,14212652.0,1,0,/players/812652/facundo-medina,True,,,,,Facundo Medina,812652.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Yellow,,,,,,,,,,
+76,Card,,14212655.0,1,0,/players/526827/konrad-laimer,False,,,,,Konrad Laimer,526827.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Yellow,,,,,,,,,,
+78,Substitution,0.0,,1,0,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Patrick Wimmer,1073498,/players/1073498/patrick-wimmer
+82,Substitution,0.0,,1,0,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Leandro Paredes,237606,/players/237606/leandro-paredes
+82,Substitution,0.0,,1,0,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Nicolás Tagliafico,195750,/players/195750/nicolas-tagliafico
+85,Substitution,0.0,,1,0,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Carney Chukwuemeka,1089685,/players/1089685/carney-chukwuemeka
+90,AddedTime,,,1,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,+ 5 minutes added,added_injury_time,5.0,,,,,,
+90 + 2,Card,2.0,14212684.0,1,0,/players/237606/leandro-paredes,True,,,,,Leandro Paredes,237606.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Yellow,,,,,,,,,,
+90 + 5,Goal,5.0,14212685.0,1,0,/players/30981/lionel-messi,True,False,,,,Lionel Messi,30981.0,"[2, 0]",,,,,,2945239935.0,Goal,6706.0,30981.0,Lionel Messi,101.206896552,40.889761905,90.0,5.0,False,True,,,34.99125,0.1219999994,0.20116738975048065,0.9366592764854431,LeftFoot,FastBreak,SecondHalf,False,0.73776455026455,0.032275132116402115,1.0,False,True,450739.0,Lionel,Messi,Lionel Messi,#63addf,,,,,,,,,,,
+90,Half,,,2,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FT,fulltime_short,,,,

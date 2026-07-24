@@ -1,0 +1,18 @@
+timeStr,type,overloadTime,eventId,homeScore,awayScore,profileUrl,isHome,fullName,playerId,card,cardDescription,minutesAddedStr,minutesAddedKey,minutesAddedInput,halfStrShort,halfStrKey,injuredPlayerOut,ownGoal,goalDescription,isPenaltyShootoutEvent,newScore,penShootoutScore,assistStr,assistProfileUrl,assistPlayerId,assistKey,assistInput,shotmapEvent.id,shotmapEvent.eventType,shotmapEvent.teamId,shotmapEvent.playerId,shotmapEvent.playerName,shotmapEvent.x,shotmapEvent.y,shotmapEvent.min,shotmapEvent.minAdded,shotmapEvent.isBlocked,shotmapEvent.isOnTarget,shotmapEvent.blockedX,shotmapEvent.blockedY,shotmapEvent.goalCrossedY,shotmapEvent.goalCrossedZ,shotmapEvent.expectedGoals,shotmapEvent.expectedGoalsOnTarget,shotmapEvent.shotType,shotmapEvent.situation,shotmapEvent.period,shotmapEvent.isOwnGoal,shotmapEvent.onGoalShot.x,shotmapEvent.onGoalShot.y,shotmapEvent.onGoalShot.zoomRatio,shotmapEvent.isSavedOffLine,shotmapEvent.isFromInsideBox,shotmapEvent.keeperId,shotmapEvent.firstName,shotmapEvent.lastName,shotmapEvent.fullName,shotmapEvent.teamColor,substitution_name,substitution_id,substitution_profileUrl
+16,Card,,14206605.0,0,0,/players/1615927/caleb-yirenkyi,True,Caleb Yirenkyi,1615927.0,Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+45,AddedTime,,,0,0,,,,,,,+ 5 minutes added,added_injury_time,5.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+45,Half,,,0,0,,,,,,,,,,HT,halftime_short,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+46,Substitution,0.0,,0,0,,True,,,,,,,,,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Benjamin Asare,1806615,/players/1806615/benjamin-asare
+58,Substitution,0.0,,0,0,,True,,,,,,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Abdul Fatawu,1265626,/players/1265626/abdul-fatawu
+58,Substitution,0.0,,0,0,,True,,,,,,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Brandon Thomas-Asante,776184,/players/776184/brandon-thomas-asante
+63,Substitution,0.0,,0,0,,False,,,,,,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,José Fajardo,940334,/players/940334/jose-fajardo
+63,Substitution,0.0,,0,0,,False,,,,,,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Azarías Londoño,1404414,/players/1404414/azarias-londono
+72,Card,,14206617.0,0,0,/players/888966/cesar-blackman,False,César Blackman,888966.0,Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+74,Substitution,0.0,,0,0,,False,,,,,,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Ismael Díaz,574077,/players/574077/ismael-diaz
+78,Substitution,0.0,,0,0,,True,,,,,,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Kwasi Sibo,948745,/players/948745/kwasi-sibo
+87,Substitution,0.0,,0,0,,True,,,,,,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Prince Adu,1220633,/players/1220633/prince-adu
+90,Substitution,0.0,,0,0,,False,,,,,,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Aníbal Godoy,308131,/players/308131/anibal-godoy
+90,AddedTime,,,0,0,,,,,,,+ 6 minutes added,added_injury_time,6.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+90 + 5,Goal,5.0,14206629.0,0,0,/players/1615927/caleb-yirenkyi,True,Caleb Yirenkyi,1615927.0,,,,,,,,,,,False,"[1, 0]",,assist by Brandon Thomas-Asante,/players/776184/brandon-thomas-asante,776184.0,assist_by,Brandon Thomas-Asante,2944880851.0,Goal,6714.0,1615927.0,Caleb Yirenkyi,102.72413793119999,32.9325,90.0,5.0,False,True,,,31.941249999999997,1.3419999934,0.9653444886207581,0.994688868522644,RightFoot,FastBreak,SecondHalf,False,1.544642857142858,0.35502645328042326,1.0,False,True,531913.0,Caleb,Yirenkyi,Caleb Yirenkyi,#100f10,,,
+90 + 9,Card,9.0,14206632.0,1,0,/players/1017520/carlos-harvey,False,Carlos Harvey,1017520.0,Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+90,Half,,,1,0,,,,,,,,,,FT,fulltime_short,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

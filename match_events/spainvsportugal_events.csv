@@ -1,0 +1,18 @@
+timeStr,type,overloadTime,homeScore,awayScore,minutesAddedStr,minutesAddedKey,minutesAddedInput,halfStrShort,halfStrKey,profileUrl,isHome,injuredPlayerOut,eventId,fullName,playerId,card,cardDescription,ownGoal,goalDescription,isPenaltyShootoutEvent,newScore,penShootoutScore,assistStr,assistProfileUrl,assistPlayerId,assistKey,assistInput,shotmapEvent.id,shotmapEvent.eventType,shotmapEvent.teamId,shotmapEvent.playerId,shotmapEvent.playerName,shotmapEvent.x,shotmapEvent.y,shotmapEvent.min,shotmapEvent.minAdded,shotmapEvent.isBlocked,shotmapEvent.isOnTarget,shotmapEvent.blockedX,shotmapEvent.blockedY,shotmapEvent.goalCrossedY,shotmapEvent.goalCrossedZ,shotmapEvent.expectedGoals,shotmapEvent.expectedGoalsOnTarget,shotmapEvent.shotType,shotmapEvent.situation,shotmapEvent.period,shotmapEvent.isOwnGoal,shotmapEvent.onGoalShot.x,shotmapEvent.onGoalShot.y,shotmapEvent.onGoalShot.zoomRatio,shotmapEvent.isSavedOffLine,shotmapEvent.isFromInsideBox,shotmapEvent.keeperId,shotmapEvent.firstName,shotmapEvent.lastName,shotmapEvent.fullName,shotmapEvent.teamColor,shortName,substitution_name,substitution_id,substitution_profileUrl
+45,AddedTime,,0,0,+ 6 minutes added,added_injury_time,6.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+45,Half,,0,0,,,,HT,halftime_short,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+56,Substitution,0.0,0,0,,,,,,,True,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Nélson Semedo,470834,/players/470834/nelson-semedo
+71,Substitution,0.0,0,0,,,,,,,True,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Rafael Leão,848844,/players/848844/rafael-leao
+71,Substitution,0.0,0,0,,,,,,,True,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Diogo Dalot,751550,/players/751550/diogo-dalot
+75,Substitution,0.0,0,0,,,,,,,False,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Ferran Torres,881771,/players/881771/ferran-torres
+83,Substitution,0.0,0,0,,,,,,,True,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Francisco Conceição,1185336,/players/1185336/francisco-conceicao
+83,Substitution,0.0,0,0,,,,,,,True,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Bernardo Silva,488139,/players/488139/bernardo-silva
+85,Substitution,0.0,0,0,,,,,,,False,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Fabián Ruiz,605654,/players/605654/fabian-ruiz
+85,Substitution,0.0,0,0,,,,,,,False,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Mikel Merino,574645,/players/574645/mikel-merino
+89,Card,,0,0,,,,,,/players/488139/bernardo-silva,True,,14225019.0,Bernardo Silva,488139.0,Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+90,AddedTime,,0,0,+ 6 minutes added,added_injury_time,6.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+90 + 1,Goal,1.0,0,0,,,,,,/players/574645/mikel-merino,False,,14225020.0,Mikel Merino,574645.0,,,,,False,"[0, 1]",,assist by Ferran Torres,/players/881771/ferran-torres,881771.0,assist_by,Ferran Torres,2946483993.0,Goal,6720.0,574645.0,Mikel Merino,93.4,38.536428573,90.0,1.0,False,True,,,36.66875,0.28252631440000003,0.5503943562507629,0.7819575071334839,LeftFoot,RegularPlay,SecondHalf,False,0.29398148148148073,0.07474241121693122,1.0,False,True,795630.0,Mikel,Merino,Mikel Merino,#c62035,,,,
+90 + 3,Card,3.0,0,1,,,,,,/players/1343750/renato-veiga,True,,14225022.0,Renato Veiga,1343750.0,Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+90 + 7,Substitution,7.0,0,1,,,,,,,False,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Borja Iglesias,609505,/players/609505/borja-iglesias
+90 + 8,Card,8.0,0,1,,,,,,/players/881771/ferran-torres,False,,14225026.0,Ferran Torres,881771.0,Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Ferran,,,
+90,Half,,0,1,,,,FT,fulltime_short,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

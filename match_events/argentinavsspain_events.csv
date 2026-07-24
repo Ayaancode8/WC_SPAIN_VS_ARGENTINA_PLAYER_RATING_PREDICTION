@@ -1,0 +1,28 @@
+timeStr,type,overloadTime,eventId,homeScore,awayScore,profileUrl,isHome,fullName,playerId,card,cardDescription,injuredPlayerOut,minutesAddedStr,minutesAddedKey,minutesAddedInput,halfStrShort,halfStrKey,cardDescription.localizedKey,cardDescription.defaultText,ownGoal,goalDescription,isPenaltyShootoutEvent,shortName,newScore,penShootoutScore,assistStr,assistProfileUrl,assistPlayerId,assistKey,assistInput,shotmapEvent.id,shotmapEvent.eventType,shotmapEvent.teamId,shotmapEvent.playerId,shotmapEvent.playerName,shotmapEvent.x,shotmapEvent.y,shotmapEvent.min,shotmapEvent.minAdded,shotmapEvent.isBlocked,shotmapEvent.isOnTarget,shotmapEvent.blockedX,shotmapEvent.blockedY,shotmapEvent.goalCrossedY,shotmapEvent.goalCrossedZ,shotmapEvent.expectedGoals,shotmapEvent.expectedGoalsOnTarget,shotmapEvent.shotType,shotmapEvent.situation,shotmapEvent.period,shotmapEvent.isOwnGoal,shotmapEvent.onGoalShot.x,shotmapEvent.onGoalShot.y,shotmapEvent.onGoalShot.zoomRatio,shotmapEvent.isSavedOffLine,shotmapEvent.isFromInsideBox,shotmapEvent.keeperId,shotmapEvent.firstName,shotmapEvent.lastName,shotmapEvent.fullName,shotmapEvent.shortName,shotmapEvent.teamColor,substitution_name,substitution_id,substitution_profileUrl
+41,Card,,14239871.0,0,0,/players/847983/lisandro-martinez,False,Lisandro Martínez,847983.0,Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+44,Substitution,0.0,,0,0,,False,,,,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Nicolás Otamendi,174321,/players/174321/nicolas-otamendi
+45,AddedTime,,,0,0,,,,,,,,+ 4 minutes added,added_injury_time,4.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+45,Half,,,0,0,,,,,,,,,,,HT,halftime_short,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+46,Substitution,0.0,,0,0,,False,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Leandro Paredes,237606,/players/237606/leandro-paredes
+52,Card,,14239876.0,0,0,/players/237606/leandro-paredes,False,Leandro Paredes,237606.0,Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+58,Substitution,0.0,,0,0,,False,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Nahuel Molina,726345,/players/726345/nahuel-molina
+62,Substitution,0.0,,0,0,,True,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Ferran Torres,881771,/players/881771/ferran-torres
+62,Substitution,0.0,,0,0,,True,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Pedri,1083323,/players/1083323/pedri
+70,Substitution,0.0,,0,0,,False,,,,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Facundo Medina,812652,/players/812652/facundo-medina
+70,Substitution,0.0,,0,0,,False,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Giuliano Simeone,1226147,/players/1226147/giuliano-simeone
+75,Substitution,0.0,,0,0,,True,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Mikel Merino,574645,/players/574645/mikel-merino
+75,Substitution,0.0,,0,0,,True,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Nico Williams,1202110,/players/1202110/nico-williams
+82,Card,,14239891.0,0,0,/players/1137705/enzo-fernandez,False,Enzo Fernández,1137705.0,Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+90,AddedTime,,,0,0,,,,,,,,+ 4 minutes added,added_injury_time,4.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+90 + 2,Card,2.0,14239893.0,0,0,/players/789066/cristian-romero,False,Cristian Romero,789066.0,Yellow,,,,,,,,not_on_pitch,Not on pitch,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+90 + 3,Card,3.0,14239892.0,0,0,/players/1137705/enzo-fernandez,False,Enzo Fernández,1137705.0,YellowRed,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+90,Half,,,0,0,,,,,,,,,,,FT,fulltime_short,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+99,Substitution,0.0,,0,0,,True,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Martín Zubimendi,1031325,/players/1031325/martin-zubimendi
+99,Substitution,0.0,,0,0,,True,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Eric García,940573,/players/940573/eric-garcia
+102,Substitution,0.0,,0,0,,False,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Marcos Senesi,785411,/players/785411/marcos-senesi
+105,Card,,14239900.0,0,0,/players/38922/lionel-scaloni,False,Lionel Scaloni,38922.0,Yellow,,,,,,,,coach,Coach,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+105,AddedTime,,,0,0,,,,,,,,+ 3 minutes added,added_injury_time,3.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+106,Goal,,14239901.0,0,0,/players/881771/ferran-torres,True,Ferran Torres,881771.0,,,,,,,,,,,,,False,Ferran,"[1, 0]",,assist by Nico Williams,/players/1202110/nico-williams,1202110.0,assist_by,Nico Williams,2948021279.0,Goal,6720.0,881771.0,Ferran Torres,96.605263157,38.116190478,106.0,,False,True,,,35.0675,1.8299999910000002,0.25496339797973633,0.5547037124633789,LeftFoot,RegularPlay,SecondHalfExtra,False,0.7175925925925919,0.48412698174603175,1.0,False,True,268375.0,Ferran,Torres,Ferran Torres,Ferran,#c62035,,,
+111,Card,,14239903.0,1,0,/players/831489/alexis-mac-allister,False,Alexis Mac Allister,831489.0,Yellow,,,,,,,,,,,,,Mac Allister,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+120,AddedTime,,,1,0,,,,,,,,+ 5 minutes added,added_injury_time,5.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+120,Half,,,1,0,,,,,,,,,,,AET,afterextratime_short,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,25 @@
+timeStr,type,overloadTime,homeScore,awayScore,minutesAddedStr,minutesAddedKey,minutesAddedInput,halfStrShort,halfStrKey,profileUrl,isHome,injuredPlayerOut,eventId,fullName,playerId,card,cardDescription,addedTime,ownGoal,goalDescription,penaltyScore,VAR,substitution_name,substitution_id,substitution_profileUrl
+45,AddedTime,,0,0,+ 3 minutes added,added_injury_time,3.0,,,,,,,,,,,,,,,,,,
+45,Half,,0,0,,,,HT,halftime_short,,,,,,,,,,,,,,,,
+46,Substitution,0.0,0,0,,,,,,,True,False,,,,,,,,,,,Djibril Sow,707970,/players/707970/djibril-sow
+51,Card,,0,0,,,,,,/players/207236/granit-xhaka,True,,14225495.0,Granit Xhaka,207236.0,Yellow,,,,,,,,,
+59,Card,,0,0,,,,,,/players/598355/denis-zakaria,True,,14225496.0,Denis Zakaria,598355.0,Yellow,,,,,,,,,
+60,Card,,0,0,,,,,,/players/792303/luis-suarez,False,,14225497.0,Luis Suárez,792303.0,Yellow,,,,,,,,,
+66,Substitution,0.0,0,0,,,,,,,False,False,,,,,,,,,,,Juan Quintero,207617,/players/207617/juan-quintero
+66,Substitution,0.0,0,0,,,,,,,False,False,,,,,,,,,,,Jaminton Campaz,837870,/players/837870/jaminton-campaz
+71,Substitution,0.0,0,0,,,,,,,True,False,,,,,,,,,,,Miro Muheim,759817,/players/759817/miro-muheim
+82,Substitution,0.0,0,0,,,,,,,False,False,,,,,,,,,,,Juan Hernández,852071,/players/852071/juan-hernandez
+82,Substitution,0.0,0,0,,,,,,,False,False,,,,,,,,,,,Richard Ríos,1174630,/players/1174630/richard-rios
+87,Substitution,0.0,0,0,,,,,,,True,False,,,,,,,,,,,Cedric Itten,726956,/players/726956/cedric-itten
+87,Substitution,0.0,0,0,,,,,,,True,False,,,,,,,,,,,Silvan Widmer,275034,/players/275034/silvan-widmer
+90,AddedTime,,0,0,+ 5 minutes added,added_injury_time,5.0,,,,,,,,,,,,,,,,,,
+90 + 1,Substitution,1.0,0,0,,,,,,,True,False,,,,,,,,,,,Rubén Vargas,860752,/players/860752/ruben-vargas
+90,Half,,0,0,,,,FT,fulltime_short,,,,,,,,,,,,,,,,
+94,Card,,0,0,,,,,,/players/643533/davinson-sanchez,False,,14225514.0,Davinson Sánchez,643533.0,Yellow,,,,,,,,,
+103,Substitution,0.0,0,0,,,,,,,True,False,,,,,,,,,,,Zeki Amdouni,1067168,/players/1067168/zeki-amdouni
+105,Card,,0,0,,,,,,/players/759817/miro-muheim,True,,14225517.0,Miro Muheim,759817.0,Yellow,,,,,,,,,
+105,AddedTime,,0,0,+ 1 minute added,added_injury_time,1.0,,,,,,,,,,,,,,,,,,
+118,Substitution,0.0,0,0,,,,,,,False,True,,,,,,,,,,,Yerry Mina,496042,/players/496042/yerry-mina
+120,AddedTime,,0,0,+ 1 minute added,added_injury_time,1.0,,,,,,,,,,,,,,,,,,
+120,Half,,0,0,,,,AET,afterextratime_short,,,,,,,,,,,,,,,,
+,PenaltyShootout,,4,3,,,,,,,,,,,,,,,,,"[4, 3]",,,,

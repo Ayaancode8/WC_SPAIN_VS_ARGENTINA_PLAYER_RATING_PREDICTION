@@ -1,0 +1,15 @@
+timeStr,type,overloadTime,homeScore,awayScore,minutesAddedStr,minutesAddedKey,minutesAddedInput,halfStrShort,halfStrKey,profileUrl,isHome,injuredPlayerOut,eventId,fullName,playerId,card,cardDescription,substitution_name,substitution_id,substitution_profileUrl
+45,AddedTime,,0,0,+ 6 minutes added,added_injury_time,6.0,,,,,,,,,,,,,
+45,Half,,0,0,,,,HT,halftime_short,,,,,,,,,,,
+46,Substitution,0.0,0,0,,,,,,,True,False,,,,,,Mauricio,1059490,/players/1059490/mauricio
+46,Card,,0,0,,,,,,/players/369742/jackson-irvine,False,,14214494.0,Jackson Irvine,369742.0,Yellow,,,,
+58,Substitution,0.0,0,0,,,,,,,False,False,,,,,,Ajdin Hrustic,675762,/players/675762/ajdin-hrustic
+67,Substitution,0.0,0,0,,,,,,,True,False,,,,,,Álex Arce,1320444,/players/1320444/alex-arce
+77,Card,,0,0,,,,,,/players/1354561/diego-gomez,True,,14214510.0,Diego Gómez,1354561.0,Yellow,,,,
+84,Substitution,0.0,0,0,,,,,,,True,True,,,,,,José Canale,860890,/players/860890/jose-canale
+84,Substitution,0.0,0,0,,,,,,,False,False,,,,,,Paul Okon-Engstler,1527363,/players/1527363/paul-okon-engstler
+84,Substitution,0.0,0,0,,,,,,,False,False,,,,,,Tete Yengi,1220549,/players/1220549/tete-yengi
+90,AddedTime,,0,0,+ 5 minutes added,added_injury_time,5.0,,,,,,,,,,,,,
+90 + 2,Substitution,2.0,0,0,,,,,,,True,False,,,,,,Damián Bobadilla,1252913,/players/1252913/damian-bobadilla
+90 + 2,Substitution,2.0,0,0,,,,,,,True,False,,,,,,Júnior Alonso,466214,/players/466214/junior-alonso
+90,Half,,0,0,,,,FT,fulltime_short,,,,,,,,,,,

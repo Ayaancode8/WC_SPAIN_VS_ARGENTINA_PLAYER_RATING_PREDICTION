@@ -1,0 +1,16 @@
+timeStr,type,overloadTime,eventId,homeScore,awayScore,profileUrl,isHome,fullName,playerId,card,cardDescription,minutesAddedStr,minutesAddedKey,minutesAddedInput,halfStrShort,halfStrKey,injuredPlayerOut,substitution_name,substitution_id,substitution_profileUrl
+16,Card,,14205333.0,0,0,/players/1441786/sidny-lopes-cabral,False,Sidny Lopes Cabral,1441786.0,Yellow,,,,,,,,,,
+45,AddedTime,,,0,0,,,,,,,+ 4 minutes added,added_injury_time,4.0,,,,,,
+45,Half,,,0,0,,,,,,,,,,HT,halftime_short,,,,
+61,Substitution,0.0,,0,0,,False,,,,,,,,,,False,Willy Semedo,873832,/players/873832/willy-semedo
+61,Substitution,0.0,,0,0,,False,,,,,,,,,,False,Deroy Duarte,798069,/players/798069/deroy-duarte
+61,Substitution,0.0,,0,0,,False,,,,,,,,,,False,Nuno da Costa,671326,/players/671326/nuno-da-costa
+71,Substitution,0.0,,0,0,,True,,,,,,,,,,False,Mikel Merino,574645,/players/574645/mikel-merino
+71,Substitution,0.0,,0,0,,True,,,,,,,,,,False,Lamine Yamal,1467236,/players/1467236/lamine-yamal
+76,Substitution,0.0,,0,0,,False,,,,,,,,,,False,João Paulo,1241301,/players/1241301/joao-paulo
+79,Substitution,0.0,,0,0,,False,,,,,,,,,,False,Telmo Arcanjo,1165477,/players/1165477/telmo-arcanjo
+81,Substitution,0.0,,0,0,,True,,,,,,,,,,False,Dani Olmo,614834,/players/614834/dani-olmo
+87,Substitution,0.0,,0,0,,True,,,,,,,,,,False,Nico Williams,1202110,/players/1202110/nico-williams
+90,AddedTime,,,0,0,,,,,,,+ 5 minutes added,added_injury_time,5.0,,,,,,
+90 + 3,Card,3.0,14205381.0,0,0,/players/1083323/pedri,True,Pedri,1083323.0,Yellow,,,,,,,,,,
+90,Half,,,0,0,,,,,,,,,,FT,fulltime_short,,,,

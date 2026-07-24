@@ -1,0 +1,18 @@
+timeStr,type,overloadTime,eventId,homeScore,awayScore,profileUrl,isHome,ownGoal,goalDescription,isPenaltyShootoutEvent,fullName,playerId,newScore,penShootoutScore,assistStr,assistProfileUrl,shotmapEvent.id,shotmapEvent.eventType,shotmapEvent.teamId,shotmapEvent.playerId,shotmapEvent.playerName,shotmapEvent.x,shotmapEvent.y,shotmapEvent.min,shotmapEvent.minAdded,shotmapEvent.isBlocked,shotmapEvent.isOnTarget,shotmapEvent.blockedX,shotmapEvent.blockedY,shotmapEvent.goalCrossedY,shotmapEvent.goalCrossedZ,shotmapEvent.expectedGoals,shotmapEvent.expectedGoalsOnTarget,shotmapEvent.shotType,shotmapEvent.situation,shotmapEvent.period,shotmapEvent.isOwnGoal,shotmapEvent.onGoalShot.x,shotmapEvent.onGoalShot.y,shotmapEvent.onGoalShot.zoomRatio,shotmapEvent.isSavedOffLine,shotmapEvent.isFromInsideBox,shotmapEvent.keeperId,shotmapEvent.firstName,shotmapEvent.lastName,shotmapEvent.fullName,shotmapEvent.teamColor,card,cardDescription,minutesAddedStr,minutesAddedKey,minutesAddedInput,halfStrShort,halfStrKey,injuredPlayerOut,substitution_name,substitution_id,substitution_profileUrl
+29,Goal,,14202556.0,0,0,/players/356406/john-mcginn,False,,,False,John McGinn,356406.0,"[0, 1]",,,,2944569271.0,Goal,8498.0,356406.0,John McGinn,91.3,32.70374999999999,28.0,,False,True,,,33.5425,1.5859999922,0.13991357386112213,0.3370787799358368,LeftFoot,RegularPlay,FirstHalf,False,1.121031746031747,0.4195767175132275,1.0,False,True,103468.0,John,McGinn,John McGinn,#143459,,,,,,,,,,,
+39,Card,,14202593.0,0,1,/players/769166/jean-ricner-bellegarde,True,,,,Jean-Ricner Bellegarde,769166.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Yellow,,,,,,,,,,
+45,AddedTime,,,0,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,+ 4 minutes added,added_injury_time,4.0,,,,,,
+45,Half,,,0,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,HT,halftime_short,,,,
+46,Card,,14202642.0,0,1,/players/1002039/aaron-hickey,False,,,,Aaron Hickey,1002039.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Yellow,,,,,,,,,,
+61,Substitution,0.0,,0,1,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Josué Casimir,1199382,/players/1199382/josue-casimir
+75,Substitution,0.0,,0,1,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Ryan Christie,439369,/players/439369/ryan-christie
+75,Substitution,0.0,,0,1,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Lyndon Dykes,768635,/players/768635/lyndon-dykes
+75,Substitution,0.0,,0,1,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Nathan Patterson,1112684,/players/1112684/nathan-patterson
+75,Substitution,0.0,,0,1,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Lenny Joseph,1242314,/players/1242314/lenny-joseph
+82,Substitution,0.0,,0,1,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Findlay Curtis,1558461,/players/1558461/findlay-curtis
+82,Substitution,0.0,,0,1,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Kenny McLean,190851,/players/190851/kenny-mclean
+85,Substitution,0.0,,0,1,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Yassin Fortuné,759569,/players/759569/yassin-fortune
+90,AddedTime,,,0,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,+ 6 minutes added,added_injury_time,6.0,,,,,,
+90 + 1,Card,1.0,14202728.0,0,1,/players/1558461/findlay-curtis,False,,,,Findlay Curtis,1558461.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Yellow,,,,,,,,,,
+90 + 5,Card,5.0,14202729.0,0,1,/players/190851/kenny-mclean,False,,,,Kenny McLean,190851.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Yellow,,,,,,,,,,
+90,Half,,,0,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FT,fulltime_short,,,,

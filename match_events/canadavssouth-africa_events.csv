@@ -1,0 +1,16 @@
+timeStr,type,overloadTime,homeScore,awayScore,minutesAddedStr,minutesAddedKey,minutesAddedInput,halfStrShort,halfStrKey,profileUrl,isHome,injuredPlayerOut,eventId,fullName,playerId,card,cardDescription,ownGoal,goalDescription,isPenaltyShootoutEvent,newScore,penShootoutScore,assistStr,assistProfileUrl,shotmapEvent.id,shotmapEvent.eventType,shotmapEvent.teamId,shotmapEvent.playerId,shotmapEvent.playerName,shotmapEvent.x,shotmapEvent.y,shotmapEvent.min,shotmapEvent.minAdded,shotmapEvent.isBlocked,shotmapEvent.isOnTarget,shotmapEvent.blockedX,shotmapEvent.blockedY,shotmapEvent.goalCrossedY,shotmapEvent.goalCrossedZ,shotmapEvent.expectedGoals,shotmapEvent.expectedGoalsOnTarget,shotmapEvent.shotType,shotmapEvent.situation,shotmapEvent.period,shotmapEvent.isOwnGoal,shotmapEvent.onGoalShot.x,shotmapEvent.onGoalShot.y,shotmapEvent.onGoalShot.zoomRatio,shotmapEvent.isSavedOffLine,shotmapEvent.isFromInsideBox,shotmapEvent.keeperId,shotmapEvent.firstName,shotmapEvent.lastName,shotmapEvent.fullName,shotmapEvent.teamColor,substitution_name,substitution_id,substitution_profileUrl
+45,AddedTime,,0,0,+ 3 minutes added,added_injury_time,3.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+45,Half,,0,0,,,,HT,halftime_short,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+46,Substitution,0.0,0,0,,,,,,,True,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Thalente Mbatha,1124424,/players/1124424/thalente-mbatha
+54,Card,,0,0,,,,,,/players/1216798/nathan-saliba,False,,14218706.0,Nathan Saliba,1216798.0,Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+59,Substitution,0.0,0,0,,,,,,,False,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Niko Sigur,1494508,/players/1494508/niko-sigur
+59,Substitution,0.0,0,0,,,,,,,False,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Luc De Fougerolles,1399943,/players/1399943/luc-de-fougerolles
+67,Card,,0,0,,,,,,/players/1494508/niko-sigur,False,,14218725.0,Niko Sigur,1494508.0,Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+70,Substitution,0.0,0,0,,,,,,,False,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Promise David,1252132,/players/1252132/promise-david
+70,Substitution,0.0,0,0,,,,,,,False,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Jacob Shaffelburg,1023943,/players/1023943/jacob-shaffelburg
+75,Substitution,0.0,0,0,,,,,,,False,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Alphonso Davies,751202,/players/751202/alphonso-davies
+86,Substitution,0.0,0,0,,,,,,,True,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Iqraam Rayners,1076668,/players/1076668/iqraam-rayners
+86,Substitution,0.0,0,0,,,,,,,True,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Tshepang Moremi,1289611,/players/1289611/tshepang-moremi
+90,AddedTime,,0,0,+ 5 minutes added,added_injury_time,5.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+90 + 2,Goal,2.0,0,0,,,,,,/players/816223/stephen-eustaquio,False,,14218776.0,Stephen Eustaquio,816223.0,,,,,False,"[0, 1]",,,,2945752749.0,Goal,5810.0,816223.0,Stephen Eustaquio,87.21176470559999,28.791190475,90.0,2.0,False,True,,,37.2025,0.28252631440000003,0.096674345433712,0.666019856929779,RightFoot,RegularPlay,SecondHalf,False,0.15277777777777768,0.07474241121693122,1.0,False,False,253991.0,Stephen,Eustaquio,Stephen Eustaquio,#C50011,,,
+90,Half,,0,1,,,,FT,fulltime_short,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

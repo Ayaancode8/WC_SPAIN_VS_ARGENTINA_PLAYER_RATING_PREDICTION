@@ -1,0 +1,20 @@
+timeStr,type,overloadTime,homeScore,awayScore,profileUrl,isHome,injuredPlayerOut,eventId,fullName,playerId,card,cardDescription,ownGoal,goalDescription,isPenaltyShootoutEvent,newScore,penShootoutScore,assistStr,assistProfileUrl,assistPlayerId,assistKey,assistInput,shotmapEvent.id,shotmapEvent.eventType,shotmapEvent.teamId,shotmapEvent.playerId,shotmapEvent.playerName,shotmapEvent.x,shotmapEvent.y,shotmapEvent.min,shotmapEvent.minAdded,shotmapEvent.isBlocked,shotmapEvent.isOnTarget,shotmapEvent.blockedX,shotmapEvent.blockedY,shotmapEvent.goalCrossedY,shotmapEvent.goalCrossedZ,shotmapEvent.expectedGoals,shotmapEvent.expectedGoalsOnTarget,shotmapEvent.shotType,shotmapEvent.situation,shotmapEvent.period,shotmapEvent.isOwnGoal,shotmapEvent.onGoalShot.x,shotmapEvent.onGoalShot.y,shotmapEvent.onGoalShot.zoomRatio,shotmapEvent.isSavedOffLine,shotmapEvent.isFromInsideBox,shotmapEvent.keeperId,shotmapEvent.firstName,shotmapEvent.lastName,shotmapEvent.fullName,shotmapEvent.teamColor,minutesAddedStr,minutesAddedKey,minutesAddedInput,halfStrShort,halfStrKey,substitution_name,substitution_id,substitution_profileUrl
+8,Substitution,0.0,0,0,,True,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Luis Suárez,792303,/players/792303/luis-suarez
+12,Card,,0,0,/players/1023030/jhon-arias,True,,14220848.0,Jhon Arias,1023030.0,Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+13,Substitution,0.0,0,0,,False,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Alidu Seidu,1177779,/players/1177779/alidu-seidu
+14,Goal,,0,0,/players/1023030/jhon-arias,True,,14220852.0,Jhon Arias,1023030.0,,,,,False,"[1, 0]",,assist by Luis Suárez,/players/792303/luis-suarez,792303.0,assist_by,Luis Suárez,2946048015.0,Goal,8258.0,1023030.0,Jhon Arias,97.6666666661,37.58375000000001,14.0,,False,True,,,31.78875,0.160526315,0.45970773696899414,0.7206950783729553,RightFoot,RegularPlay,FirstHalf,False,1.5849867724867723,0.042467279100529096,1.0,False,True,615411.0,Jhon,Arias,Jhon Arias,#dd9d0b,,,,,,,,
+45,AddedTime,,1,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,+ 6 minutes added,added_injury_time,6.0,,,,,
+45,Half,,1,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,HT,halftime_short,,,
+46,Substitution,0.0,1,0,,True,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Richard Ríos,1174630,/players/1174630/richard-rios
+49,Card,,1,0,/players/1615927/caleb-yirenkyi,False,,14220869.0,Caleb Yirenkyi,1615927.0,Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+62,Substitution,0.0,1,0,,False,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Abdul Fatawu,1265626,/players/1265626/abdul-fatawu
+62,Substitution,0.0,1,0,,False,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Elisha Owusu,883823,/players/883823/elisha-owusu
+66,Card,,1,0,/players/1265626/abdul-fatawu,False,,14220880.0,Abdul Fatawu,1265626.0,Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+72,Substitution,0.0,1,0,,True,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Juan Quintero,207617,/players/207617/juan-quintero
+76,Card,,1,0,/players/1177779/alidu-seidu,False,,14220887.0,Alidu Seidu,1177779.0,Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+78,Card,,1,0,/players/1174630/richard-rios,True,,14220888.0,Richard Ríos,1174630.0,Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+79,Substitution,0.0,1,0,,False,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Prince Adu,1220633,/players/1220633/prince-adu
+79,Substitution,0.0,1,0,,False,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Ernest Nuamah,1338390,/players/1338390/ernest-nuamah
+90,Substitution,0.0,1,0,,True,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Jaminton Campaz,837870,/players/837870/jaminton-campaz
+90,AddedTime,,1,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,+ 6 minutes added,added_injury_time,6.0,,,,,
+90,Half,,1,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FT,fulltime_short,,,

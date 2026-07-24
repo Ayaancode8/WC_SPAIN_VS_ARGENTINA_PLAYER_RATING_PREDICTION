@@ -1,0 +1,19 @@
+timeStr,type,overloadTime,eventId,homeScore,awayScore,profileUrl,isHome,fullName,playerId,card,cardDescription,minutesAddedStr,minutesAddedKey,minutesAddedInput,halfStrShort,halfStrKey,injuredPlayerOut,ownGoal,goalDescription,isPenaltyShootoutEvent,shortName,newScore,penShootoutScore,assistStr,assistProfileUrl,assistPlayerId,assistKey,assistInput,shotmapEvent.id,shotmapEvent.eventType,shotmapEvent.teamId,shotmapEvent.playerId,shotmapEvent.playerName,shotmapEvent.x,shotmapEvent.y,shotmapEvent.min,shotmapEvent.minAdded,shotmapEvent.isBlocked,shotmapEvent.isOnTarget,shotmapEvent.blockedX,shotmapEvent.blockedY,shotmapEvent.goalCrossedY,shotmapEvent.goalCrossedZ,shotmapEvent.expectedGoals,shotmapEvent.expectedGoalsOnTarget,shotmapEvent.shotType,shotmapEvent.situation,shotmapEvent.period,shotmapEvent.isOwnGoal,shotmapEvent.onGoalShot.x,shotmapEvent.onGoalShot.y,shotmapEvent.onGoalShot.zoomRatio,shotmapEvent.isSavedOffLine,shotmapEvent.isFromInsideBox,shotmapEvent.keeperId,shotmapEvent.firstName,shotmapEvent.lastName,shotmapEvent.fullName,shotmapEvent.shortName,shotmapEvent.teamColor,substitution_name,substitution_id,substitution_profileUrl
+28,Card,,14205156.0,0,0,/players/602211/seko-fofana,True,Seko Fofana,602211.0,Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+38,Card,,14205176.0,0,0,/players/579747/franck-kessie,True,Franck Kessié,579747.0,Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+40,Card,,14205180.0,0,0,/players/1395704/guela-doue,True,Guéla Doué,1395704.0,Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+45,AddedTime,,,0,0,,,,,,,+ 4 minutes added,added_injury_time,4.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+45,Half,,,0,0,,,,,,,,,,HT,halftime_short,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+56,Substitution,0.0,,0,0,,False,,,,,,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Nilson Angulo,1287010,/players/1287010/nilson-angulo
+56,Substitution,0.0,,0,0,,True,,,,,,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Amad Diallo,1070052,/players/1070052/amad-diallo
+56,Substitution,0.0,,0,0,,True,,,,,,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Ange-Yoan Bonny,1199383,/players/1199383/ange-yoan-bonny
+62,Substitution,0.0,,0,0,,False,,,,,,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Ángelo Preciado,848593,/players/848593/angelo-preciado
+62,Substitution,0.0,,0,0,,False,,,,,,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Jackson Porozo,1032039,/players/1032039/jackson-porozo
+73,Card,,14205265.0,0,0,/players/1032039/jackson-porozo,False,Jackson Porozo,1032039.0,Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+77,Substitution,0.0,,0,0,,True,,,,,,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Christ Inao Oulaï,1666494,/players/1666494/christ-inao-oulai
+77,Substitution,0.0,,0,0,,True,,,,,,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Ibrahim Sangaré,795371,/players/795371/ibrahim-sangare
+77,Substitution,0.0,,0,0,,False,,,,,,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Kevin Rodríguez,1421270,/players/1421270/kevin-rodriguez
+89,Substitution,0.0,,0,0,,True,,,,,,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Odilon Kossounou,1014496,/players/1014496/odilon-kossounou
+90,Goal,,14205278.0,0,0,/players/1070052/amad-diallo,True,Amad Diallo,1070052.0,,,,,,,,,,,False,Amad,"[1, 0]",,assist by Wilfried Singo,/players/1027472/wilfried-singo,1027472.0,assist_by,Wilfried Singo,2944721263.0,Goal,6709.0,1070052.0,Amad Diallo,90.5,31.7125,90.0,0.0,False,True,,,37.355000000000004,0.3659999982,0.16347406804561615,0.8651841878890991,LeftFoot,RegularPlay,SecondHalf,False,0.11243386243386144,0.09682539634920634,1.0,False,True,146801.0,Amad,Diallo,Amad Diallo,Amad,#FD8B06,,,
+90,AddedTime,,,1,0,,,,,,,+ 7 minutes added,added_injury_time,7.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+90,Half,,,1,0,,,,,,,,,,FT,fulltime_short,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

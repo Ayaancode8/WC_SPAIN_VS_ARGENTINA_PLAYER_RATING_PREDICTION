@@ -1,0 +1,24 @@
+timeStr,type,overloadTime,eventId,homeScore,awayScore,profileUrl,isHome,ownGoal,goalDescription,isPenaltyShootoutEvent,fullName,playerId,newScore,penShootoutScore,assistStr,assistProfileUrl,shotmapEvent.id,shotmapEvent.eventType,shotmapEvent.teamId,shotmapEvent.playerId,shotmapEvent.playerName,shotmapEvent.x,shotmapEvent.y,shotmapEvent.min,shotmapEvent.minAdded,shotmapEvent.isBlocked,shotmapEvent.isOnTarget,shotmapEvent.blockedX,shotmapEvent.blockedY,shotmapEvent.goalCrossedY,shotmapEvent.goalCrossedZ,shotmapEvent.expectedGoals,shotmapEvent.expectedGoalsOnTarget,shotmapEvent.shotType,shotmapEvent.situation,shotmapEvent.period,shotmapEvent.isOwnGoal,shotmapEvent.onGoalShot.x,shotmapEvent.onGoalShot.y,shotmapEvent.onGoalShot.zoomRatio,shotmapEvent.isSavedOffLine,shotmapEvent.isFromInsideBox,shotmapEvent.keeperId,shotmapEvent.firstName,shotmapEvent.lastName,shotmapEvent.fullName,shotmapEvent.teamColor,card,cardDescription,minutesAddedStr,minutesAddedKey,minutesAddedInput,halfStrShort,halfStrKey,injuredPlayerOut,substitution_name,substitution_id,substitution_profileUrl
+11,Goal,,14207729.0,0,0,/players/564842/cameron-burgess,True,True,Own goal,False,Cameron Burgess,564842.0,"[1, 0]",,,,2944976229.0,Goal,6716.0,564842.0,Cameron Burgess,3.5086206894000003,34.4575,11.0,,False,True,,,35.83,1.6694736760000002,,,LeftFoot,RegularPlay,FirstHalf,True,0.5158730158730164,0.44165970264550264,1.0,False,True,1335765.0,Cameron,Burgess,Cameron Burgess,#de9c00,,,,,,,,,,,
+16,Card,,14207748.0,1,0,/players/1316930/jordan-bos,False,,,,Jordan Bos,1316930.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Yellow,,,,,,,,,,
+32,Card,,14207780.0,1,0,/players/1318686/alessandro-circati,False,,,,Alessandro Circati,1318686.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Yellow,,,,,,,,,,
+43,Goal,,14207794.0,1,0,/players/1338696/alex-freeman,True,,Header,False,Alex Freeman,1338696.0,"[2, 0]",,,,2944981509.0,Goal,6713.0,1338696.0,Alex Freeman,101.8706896554,33.161249999999995,43.0,,False,True,,,31.026249999999997,0.6485263126,0.3369664251804352,0.9448951482772827,Header,SetPiece,FirstHalf,False,1.7867063492063497,0.17156780756613757,1.0,False,True,1335765.0,Alex,Freeman,Alex Freeman,#293664,,,,,,,,,,,
+45,AddedTime,,,2,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,+ 7 minutes added,added_injury_time,7.0,,,,,,
+45,Half,,,2,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,HT,halftime_short,,,,
+46,Substitution,0.0,,2,0,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Jason Geria,418799,/players/418799/jason-geria
+46,Substitution,0.0,,2,0,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Connor Metcalfe,885870,/players/885870/connor-metcalfe
+46,Substitution,0.0,,2,0,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Nestory Irankunda,1327214,/players/1327214/nestory-irankunda
+56,Card,,14207929.0,2,0,/players/662428/antonee-robinson,True,,,,Antonee Robinson,662428.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Yellow,,,,,,,,,,
+61,Substitution,0.0,,2,0,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,True,Cristian Volpato,1308909,/players/1308909/cristian-volpato
+74,Substitution,0.0,,2,0,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Sebastian Berhalter,1136096,/players/1136096/sebastian-berhalter
+78,Substitution,0.0,,2,0,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Jackson Irvine,369742,/players/369742/jackson-irvine
+80,Substitution,0.0,,2,0,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Joseph Scally,959696,/players/959696/joseph-scally
+80,Substitution,0.0,,2,0,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Auston Trusty,688271,/players/688271/auston-trusty
+89,Card,,14208031.0,2,0,/players/671518/harry-souttar,False,,,,Harry Souttar,671518.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Yellow,,,,,,,,,,
+89,Card,,14208032.0,2,0,/players/982677/folarin-balogun,True,,,,Folarin Balogun,982677.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Yellow,,,,,,,,,,
+89,Card,,14208034.0,2,0,/players/889093/jacob-italiano,False,,,,Jacob Italiano,889093.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Yellow,,,,,,,,,,
+90,AddedTime,,,2,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,+ 6 minutes added,added_injury_time,6.0,,,,,,
+90 + 3,Card,3.0,14208039.0,2,0,/players/950829/chris-richards,True,,,,Chris Richards,950829.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Yellow,,,,,,,,,,
+90 + 6,Substitution,6.0,,2,0,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Haji Wright,848268,/players/848268/haji-wright
+90 + 6,Substitution,6.0,,2,0,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Giovanni Reyna,1071179,/players/1071179/giovanni-reyna
+90,Half,,,2,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FT,fulltime_short,,,,

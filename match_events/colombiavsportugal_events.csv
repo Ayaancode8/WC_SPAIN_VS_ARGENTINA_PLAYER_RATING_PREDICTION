@@ -1,0 +1,16 @@
+timeStr,type,overloadTime,homeScore,awayScore,minutesAddedStr,minutesAddedKey,minutesAddedInput,halfStrShort,halfStrKey,profileUrl,isHome,injuredPlayerOut,eventId,fullName,playerId,card,cardDescription,substitution_name,substitution_id,substitution_profileUrl
+45,AddedTime,,0,0,+ 3 minutes added,added_injury_time,3.0,,,,,,,,,,,,,
+45,Half,,0,0,,,,HT,halftime_short,,,,,,,,,,,
+46,Substitution,0.0,0,0,,,,,,,False,False,,,,,,Diogo Dalot,751550,/players/751550/diogo-dalot
+46,Substitution,0.0,0,0,,,,,,,False,False,,,,,,João Neves,1342757,/players/1342757/joao-neves
+60,Substitution,0.0,0,0,,,,,,,True,False,,,,,,Luis Suárez,792303,/players/792303/luis-suarez
+60,Substitution,0.0,0,0,,,,,,,True,False,,,,,,Richard Ríos,1174630,/players/1174630/richard-rios
+70,Substitution,0.0,0,0,,,,,,,False,False,,,,,,Rafael Leão,848844,/players/848844/rafael-leao
+70,Substitution,0.0,0,0,,,,,,,False,False,,,,,,Samú,1130583,/players/1130583/samu
+76,Substitution,0.0,0,0,,,,,,,True,False,,,,,,Kevin Castaño,1434853,/players/1434853/kevin-castano
+76,Substitution,0.0,0,0,,,,,,,True,False,,,,,,Juan Quintero,207617,/players/207617/juan-quintero
+86,Card,,0,0,,,,,,/players/1331597/gustavo-puerta,True,,14217464.0,Gustavo Puerta,1331597.0,Yellow,,,,
+87,Substitution,0.0,0,0,,,,,,,True,False,,,,,,Daniel Muñoz,859282,/players/859282/daniel-munoz
+90,AddedTime,,0,0,+ 5 minutes added,added_injury_time,5.0,,,,,,,,,,,,,
+90 + 2,Substitution,2.0,0,0,,,,,,,False,False,,,,,,Matheus Nunes,955529,/players/955529/matheus-nunes
+90,Half,,0,0,,,,FT,fulltime_short,,,,,,,,,,,

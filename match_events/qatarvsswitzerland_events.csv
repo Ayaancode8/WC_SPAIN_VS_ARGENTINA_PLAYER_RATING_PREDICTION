@@ -1,0 +1,20 @@
+timeStr,type,overloadTime,eventId,homeScore,awayScore,profileUrl,isHome,fullName,playerId,card,cardDescription,ownGoal,goalDescription,isPenaltyShootoutEvent,newScore,penShootoutScore,assistStr,assistProfileUrl,shotmapEvent.id,shotmapEvent.eventType,shotmapEvent.teamId,shotmapEvent.playerId,shotmapEvent.playerName,shotmapEvent.x,shotmapEvent.y,shotmapEvent.min,shotmapEvent.minAdded,shotmapEvent.isBlocked,shotmapEvent.isOnTarget,shotmapEvent.blockedX,shotmapEvent.blockedY,shotmapEvent.goalCrossedY,shotmapEvent.goalCrossedZ,shotmapEvent.expectedGoals,shotmapEvent.expectedGoalsOnTarget,shotmapEvent.shotType,shotmapEvent.situation,shotmapEvent.period,shotmapEvent.isOwnGoal,shotmapEvent.onGoalShot.x,shotmapEvent.onGoalShot.y,shotmapEvent.onGoalShot.zoomRatio,shotmapEvent.isSavedOffLine,shotmapEvent.isFromInsideBox,shotmapEvent.keeperId,shotmapEvent.firstName,shotmapEvent.lastName,shotmapEvent.fullName,shotmapEvent.teamColor,minutesAddedStr,minutesAddedKey,minutesAddedInput,halfStrShort,halfStrKey,injuredPlayerOut,substitution_name,substitution_id,substitution_profileUrl
+16,Card,,14201908.0,0,0,/players/1213141/mahmud-abunada,True,Mahmud Abunada,1213141.0,Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+17,Goal,,14201909.0,0,0,/players/527103/breel-embolo,False,Breel Embolo,527103.0,,,,Penalty,False,"[0, 1]",,,,2944496733.0,Goal,6717.0,527103.0,Breel Embolo,94.0,34.0,17.0,,False,True,,,37.2025,0.40452631380000004,0.7884,0.8641660213470459,RightFoot,Penalty,FirstHalf,False,0.15277777777777768,0.10701754333333334,1.0,False,True,1213141.0,Breel,Embolo,Breel Embolo,#DD4145,,,,,,,,,
+23,Card,,14201936.0,0,1,/players/1195865/jassem-gaber,True,Jassem Gaber,1195865.0,Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+42,Card,,14201985.0,0,1,/players/598355/denis-zakaria,False,Denis Zakaria,598355.0,Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+45,AddedTime,,,0,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,+ 6 minutes added,added_injury_time,6.0,,,,,,
+45,Half,,,0,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,HT,halftime_short,,,,
+60,Substitution,0.0,,0,1,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Ahmed Fathi,898424,/players/898424/ahmed-fathi
+60,Substitution,0.0,,0,1,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Karim Boudiaf,309153,/players/309153/karim-boudiaf
+60,Substitution,0.0,,0,1,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Ahmed Alaaeldin,264096,/players/264096/ahmed-alaaeldin
+65,Substitution,0.0,,0,1,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Johan Manzambi,1520063,/players/1520063/johan-manzambi
+65,Substitution,0.0,,0,1,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Fabian Rieder,1161211,/players/1161211/fabian-rieder
+78,Substitution,0.0,,0,1,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Mohamed Al Mannai,1553870,/players/1553870/mohamed-al-mannai
+79,Substitution,0.0,,0,1,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Zeki Amdouni,1067168,/players/1067168/zeki-amdouni
+88,Substitution,0.0,,0,1,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Hassan Al Haidos,117539,/players/117539/hassan-al-haidos
+89,Substitution,0.0,,0,1,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Miro Muheim,759817,/players/759817/miro-muheim
+89,Substitution,0.0,,0,1,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,Ardon Jashari,1163219,/players/1163219/ardon-jashari
+90,AddedTime,,,0,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,+ 6 minutes added,added_injury_time,6.0,,,,,,
+90 + 4,Goal,4.0,14202211.0,0,1,/players/759817/miro-muheim,True,Miro Muheim,759817.0,,,True,Own goal,False,"[1, 1]",,,,2944505385.0,Goal,6717.0,759817.0,Miro Muheim,6.464912281,35.9825,90.0,4.0,False,True,,,31.559999999999995,1.0979999946,,0.7498661875724792,Header,RegularPlay,SecondHalf,True,1.6455026455026467,0.29047618904761907,1.0,False,True,764018.0,Miro,Muheim,Miro Muheim,#DD4145,,,,,,,,,
+90,Half,,,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FT,fulltime_short,,,,

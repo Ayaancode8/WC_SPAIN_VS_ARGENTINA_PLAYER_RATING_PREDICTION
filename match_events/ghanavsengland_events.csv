@@ -1,0 +1,16 @@
+timeStr,type,overloadTime,eventId,homeScore,awayScore,profileUrl,isHome,fullName,playerId,card,cardDescription,minutesAddedStr,minutesAddedKey,minutesAddedInput,halfStrShort,halfStrKey,injuredPlayerOut,substitution_name,substitution_id,substitution_profileUrl
+41,Card,,14213304.0,0,0,/players/654096/declan-rice,True,Declan Rice,654096.0,Yellow,,,,,,,,,,
+45,AddedTime,,,0,0,,,,,,,+ 6 minutes added,added_injury_time,6.0,,,,,,
+45,Half,,,0,0,,,,,,,,,,HT,halftime_short,,,,
+60,Card,,14213306.0,0,0,/players/604105/inaki-williams,False,Iñaki Williams,604105.0,Yellow,,,,,,,,,,
+65,Substitution,0.0,,0,0,,True,,,,,,,,,,False,Bukayo Saka,961995,/players/961995/bukayo-saka
+65,Substitution,0.0,,0,0,,True,,,,,,,,,,False,Nico O'Reilly,1300526,/players/1300526/nico-oreilly
+66,Substitution,0.0,,0,0,,False,,,,,,,,,,False,Abdul Fatawu,1265626,/players/1265626/abdul-fatawu
+66,Substitution,0.0,,0,0,,False,,,,,,,,,,False,Prince Adu,1220633,/players/1220633/prince-adu
+74,Substitution,0.0,,0,0,,True,,,,,,,,,,False,Eberechi Eze,818975,/players/818975/eberechi-eze
+74,Substitution,0.0,,0,0,,True,,,,,,,,,,False,Morgan Rogers,883080,/players/883080/morgan-rogers
+83,Substitution,0.0,,0,0,,True,,,,,,,,,,False,Marcus Rashford,696365,/players/696365/marcus-rashford
+87,Substitution,0.0,,0,0,,False,,,,,,,,,,False,Kojo Peprah Oppong,1429607,/players/1429607/kojo-peprah-oppong
+90,AddedTime,,,0,0,,,,,,,+ 6 minutes added,added_injury_time,6.0,,,,,,
+90 + 6,Substitution,6.0,,0,0,,False,,,,,,,,,,False,Abdul Rahman Baba,324910,/players/324910/abdul-rahman-baba
+90,Half,,,0,0,,,,,,,,,,FT,fulltime_short,,,,

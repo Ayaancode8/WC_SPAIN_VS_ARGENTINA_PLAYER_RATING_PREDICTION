@@ -1,0 +1,15 @@
+timeStr,type,overloadTime,eventId,homeScore,awayScore,profileUrl,isHome,fullName,playerId,card,cardDescription,minutesAddedStr,minutesAddedKey,minutesAddedInput,halfStrShort,halfStrKey,injuredPlayerOut,ownGoal,goalDescription,isPenaltyShootoutEvent,newScore,penShootoutScore,assistStr,assistProfileUrl,shotmapEvent.id,shotmapEvent.eventType,shotmapEvent.teamId,shotmapEvent.playerId,shotmapEvent.playerName,shotmapEvent.x,shotmapEvent.y,shotmapEvent.min,shotmapEvent.minAdded,shotmapEvent.isBlocked,shotmapEvent.isOnTarget,shotmapEvent.blockedX,shotmapEvent.blockedY,shotmapEvent.goalCrossedY,shotmapEvent.goalCrossedZ,shotmapEvent.expectedGoals,shotmapEvent.expectedGoalsOnTarget,shotmapEvent.shotType,shotmapEvent.situation,shotmapEvent.period,shotmapEvent.isOwnGoal,shotmapEvent.onGoalShot.x,shotmapEvent.onGoalShot.y,shotmapEvent.onGoalShot.zoomRatio,shotmapEvent.isSavedOffLine,shotmapEvent.isFromInsideBox,shotmapEvent.keeperId,shotmapEvent.firstName,shotmapEvent.lastName,shotmapEvent.fullName,shotmapEvent.teamColor,substitution_name,substitution_id,substitution_profileUrl
+19,Card,,14222839.0,0,0,/players/1297165/bradley-barcola,False,Bradley Barcola,1297165.0,Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+45,AddedTime,,,0,0,,,,,,,+ 3 minutes added,added_injury_time,3.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+45,Half,,,0,0,,,,,,,,,,HT,halftime_short,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+58,Substitution,0.0,,0,0,,True,,,,,,,,,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,José Canale,860890,/players/860890/jose-canale
+61,Substitution,0.0,,0,0,,True,,,,,,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Gustavo Caballero,1347933,/players/1347933/gustavo-caballero
+61,Substitution,0.0,,0,0,,False,,,,,,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Désiré Doué,1339208,/players/1339208/desire-doue
+70,Goal,,14222897.0,0,0,/players/701154/kylian-mbappe,False,Kylian Mbappé,701154.0,,,,,,,,,,Penalty,False,"[0, 1]",,,,2946211809.0,Goal,6723.0,701154.0,Kylian Mbappé,94.0,34.0,70.0,,False,True,,,31.559999999999995,0.2439999988,0.7884,0.7422869205474854,RightFoot,Penalty,SecondHalf,False,1.6455026455026467,0.06455026423280423,1.0,False,True,1683391.0,Kylian,Mbappé,Kylian Mbappé,#26406A,,,
+71,Substitution,0.0,,0,1,,True,,,,,,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Gabriel Ávalos,425711,/players/425711/gabriel-avalos
+71,Substitution,0.0,,0,1,,True,,,,,,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Mauricio,1059490,/players/1059490/mauricio
+81,Card,,14222918.0,0,1,/players/1016132/kouadio-kone,False,Kouadio Koné,1016132.0,Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+84,Substitution,0.0,,0,1,,False,,,,,,,,,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Rayan Cherki,1104053,/players/1104053/rayan-cherki
+90,AddedTime,,,0,1,,,,,,,+ 10 minutes added,added_injury_time,10.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+90 + 7,Card,7.0,14222933.0,0,1,/players/1029063/michael-olise,False,Michael Olise,1029063.0,Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+90,Half,,,0,1,,,,,,,,,,FT,fulltime_short,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

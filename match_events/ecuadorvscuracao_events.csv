@@ -1,0 +1,20 @@
+timeStr,type,overloadTime,eventId,homeScore,awayScore,profileUrl,isHome,fullName,playerId,card,cardDescription,minutesAddedStr,minutesAddedKey,minutesAddedInput,halfStrShort,halfStrKey,injuredPlayerOut,substitution_name,substitution_id,substitution_profileUrl
+38,Card,,14210013.0,0,0,/players/950396/jordy-alcivar,True,Jordy Alcívar,950396.0,Yellow,,,,,,,,,,
+39,Card,,14210016.0,0,0,/players/183500/leandro-bacuna,False,Leandro Bacuna,183500.0,Yellow,,,,,,,,,,
+45,AddedTime,,,0,0,,,,,,,+ 4 minutes added,added_injury_time,4.0,,,,,,
+45,Half,,,0,0,,,,,,,,,,HT,halftime_short,,,,
+46,Substitution,0.0,,0,0,,True,,,,,,,,,,False,Kevin Rodríguez,1421270,/players/1421270/kevin-rodriguez
+53,Card,,14210070.0,0,0,/players/614574/juninho-bacuna,False,Juninho Bacuna,614574.0,Yellow,,,,,,,,,,
+56,Card,,14210073.0,0,0,/players/1243246/livano-comenencia,False,Livano Comenencia,1243246.0,Yellow,,,,,,,,,,
+71,Substitution,0.0,,0,0,,True,,,,,,,,,,False,Nilson Angulo,1287010,/players/1287010/nilson-angulo
+75,Substitution,0.0,,0,0,,False,,,,,,,,,,False,Kenji Gorré,643232,/players/643232/kenji-gorre
+75,Substitution,0.0,,0,0,,False,,,,,,,,,,False,Roshon van Eijma,924844,/players/924844/roshon-van-eijma
+75,Substitution,0.0,,0,0,,False,,,,,,,,,,False,Jearl Margaritha,1180784,/players/1180784/jearl-margaritha
+75,Card,,14210093.0,0,0,/players/708738/jurien-gaari,False,Juriën Gaari,708738.0,Yellow,,,,,,,,,,
+83,Substitution,0.0,,0,0,,True,,,,,,,,,,False,Ángelo Preciado,848593,/players/848593/angelo-preciado
+83,Substitution,0.0,,0,0,,False,,,,,,,,,,False,Godfried Roemeratoe,938524,/players/938524/godfried-roemeratoe
+83,Substitution,0.0,,0,0,,False,,,,,,,,,,True,Gervane Kastaneer,380942,/players/380942/gervane-kastaneer
+89,Substitution,0.0,,0,0,,True,,,,,,,,,,False,Jordy Caicedo,766159,/players/766159/jordy-caicedo
+90,AddedTime,,,0,0,,,,,,,+ 5 minutes added,added_injury_time,5.0,,,,,,
+90 + 1,Card,1.0,14210150.0,0,0,/players/380942/gervane-kastaneer,False,Gervane Kastaneer,380942.0,Yellow,,,,,,,,,,
+90,Half,,,0,0,,,,,,,,,,FT,fulltime_short,,,,

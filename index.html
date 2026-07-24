@@ -3,239 +3,369 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WC Final Player Ratings: Spain vs Argentina</title>
+    <title>FIFA World Cup 2026 — Tournament Dashboard & Player Ratings</title>
+    <meta name="description" content="Interactive World Cup 2026 tournament dashboard with knockout bracket, match statistics, tactical pitch views, and AI-predicted player ratings.">
     <!-- Google Fonts Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=11">
+    <link rel="stylesheet" href="style.css?v=20">
 </head>
 <body>
-    <div class="app-container">
-        <!-- Sidebar: Selected Player Details -->
-        <aside class="player-sidebar" id="playerSidebar">
-            <div class="sidebar-empty-state" id="sidebarEmptyState">
-                <div class="empty-pitch-icon">
-                    <svg viewBox="0 0 100 100" width="80" height="80">
-                        <circle cx="50" cy="50" r="45" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-dasharray="5 5" />
-                        <line x1="5" y1="50" x2="95" y2="50" stroke="var(--text-muted)" stroke-width="2" />
-                        <circle cx="50" cy="50" r="15" fill="none" stroke="var(--text-muted)" stroke-width="2" />
-                    </svg>
-                </div>
-                <h3>Select a Player</h3>
-                <p>Click on any player on the pitch or in the list to view their detailed performance statistics and predicted ratings.</p>
+
+    <!-- Top App Navigation Bar -->
+    <nav class="app-navbar" id="appNavbar">
+        <div class="navbar-brand">
+            <span class="brand-trophy">🏆</span>
+            <span class="brand-text">World Cup 2026</span>
+        </div>
+        <div class="navbar-tabs">
+            <button class="nav-tab active" id="navOverviewTab" data-target="overview">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path d="M4 14h4v7H4zM10 10h4v11h-4zM16 7h4v14h-4z" fill="currentColor"/></svg>
+                <span>Bracket</span>
+            </button>
+            <button class="nav-tab" id="navTableTab" data-target="table">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path d="M3 3h18v2H3zm0 4h18v2H3zm0 4h18v2H3zm0 4h18v2H3zm0 4h18v2H3z" fill="currentColor"/></svg>
+                <span>Matches</span>
+            </button>
+            <button class="nav-tab" id="navMatchTab" data-target="match">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="currentColor"/></svg>
+                <span>Match Details</span>
+            </button>
+            <button class="nav-tab" id="navUclTab" data-target="champions_league">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 2l2.4 7.4h7.6l-6.2 4.5 2.4 7.4-6.2-4.5-6.2 4.5 2.4-7.4-6.2-4.5h7.6z" fill="currentColor"/></svg>
+                <span>Champions League</span>
+            </button>
+            <button class="nav-tab" id="navEplTab" data-target="premier_league">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2v-2h2v2zm0-4h-2V7h2v5.5z" fill="currentColor"/></svg>
+                <span>Premier League</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===================== OVERVIEW / BRACKET SECTION ===================== -->
+    <section class="main-section" id="overviewSection">
+        <div class="section-header">
+            <h1 class="section-title">Knockout Bracket</h1>
+            <p class="section-subtitle">Round of 32 to World Cup Final — click any match to view details</p>
+        </div>
+        <div class="bracket-wrapper" id="bracketWrapper">
+            <div class="bracket-container" id="bracketContainer">
+                <!-- Populated by JavaScript -->
             </div>
-            
-            <div class="sidebar-content hidden" id="sidebarContent">
-                <button class="close-sidebar-btn" id="closeSidebarBtn" aria-label="Close panel">&times;</button>
-                <div class="player-header-card">
-                    <div class="team-badge-glow" id="sidebarTeamGlow"></div>
-                    <div class="player-meta">
-                        <span class="player-number" id="sidebarPlayerNumber">#10</span>
-                        <span class="player-team-pill" id="sidebarPlayerTeam">Spain</span>
-                    </div>
-                    <h2 class="player-fullname" id="sidebarPlayerName">Lamine Yamal</h2>
-                    <p class="player-pos-role" id="sidebarPlayerRole">Forward (RW)</p>
-                </div>
+        </div>
+    </section>
 
-                <div class="ratings-comparison-container">
-                    <div class="rating-box match-rating">
-                        <div class="rating-circle">
-                            <span class="rating-value" id="sidebarMatchRating">9.1</span>
-                            <svg class="circle-svg" viewBox="0 0 100 100">
-                                <circle class="bg" cx="50" cy="50" r="42"></circle>
-                                <circle class="bar" cx="50" cy="50" r="42" id="matchRatingCircle"></circle>
-                            </svg>
-                        </div>
-                        <span class="rating-label">Match Rating</span>
-                    </div>
-                    
-                    <div class="rating-box predicted-rating">
-                        <div class="rating-circle">
-                            <span class="rating-value" id="sidebarPredictedRating">8.9</span>
-                            <svg class="circle-svg" viewBox="0 0 100 100">
-                                <circle class="bg" cx="50" cy="50" r="42"></circle>
-                                <circle class="bar" cx="50" cy="50" r="42" id="predRatingCircle"></circle>
-                            </svg>
-                        </div>
-                        <span class="rating-label">Predicted Rating</span>
-                    </div>
-                </div>
-
-                <div class="stats-section">
-                    <h3>Performance Stats</h3>
-                    <div class="stats-grid" id="sidebarStatsGrid">
-                        <!-- Populated by JavaScript -->
-                    </div>
-                </div>
+    <!-- ===================== MATCHES TABLE SECTION ===================== -->
+    <section class="main-section hidden" id="tableSection">
+        <div class="section-header">
+            <h1 class="section-title">All Matches</h1>
+            <p class="section-subtitle">104 matches from Group Stage to World Cup Final</p>
+        </div>
+        <div class="matches-filters-bar" id="matchesFiltersBar">
+            <div class="matches-search-box">
+                <svg class="search-icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="currentColor"/></svg>
+                <input type="text" id="matchSearchInput" placeholder="Search by team name...">
             </div>
-        </aside>
-
-        <!-- Main Content Area -->
-        <main class="main-content">
-            <!-- Header with Match Details -->
-            <header class="match-header">
-                <div class="match-meta-top">
-                    <span class="tournament-tag" id="matchTitle">World Cup Final</span>
-                    <span class="status-badge" id="matchStatus">Finished (AET)</span>
-                </div>
-                
-                <div class="scoreboard">
-                    <div class="team home-team">
-                        <span class="team-flag" id="homeFlag">🇪🇸</span>
-                        <h1 class="team-name" id="homeName">Spain</h1>
-                    </div>
-                    <div class="match-score" id="matchScore">3 - 2</div>
-                    <div class="team away-team">
-                        <h1 class="team-name" id="awayName">Argentina</h1>
-                        <span class="team-flag" id="awayFlag">🇦🇷</span>
-                    </div>
-                </div>
-
-                <div class="match-info-bar">
-                    <div class="info-item">
-                        <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" fill="currentColor"/></svg>
-                        <span id="matchVenue">Lusail Stadium</span>
-                    </div>
-                    <div class="info-item">
-                        <svg class="icon" viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z" fill="currentColor"/></svg>
-                        <span id="matchDate">July 19, 2026</span>
-                    </div>
-                </div>
-
-                <!-- Match Timeline Goals -->
-                <div class="match-goals-timeline" id="matchTimeline">
+            <div class="matches-round-filter">
+                <label for="roundFilterSelect">Round</label>
+                <select id="roundFilterSelect">
+                    <option value="all">All Rounds</option>
+                    <option value="1">Round 1 (Group)</option>
+                    <option value="2">Round 2 (Group)</option>
+                    <option value="3">Round 3 (Group)</option>
+                    <option value="1/16">Round of 32</option>
+                    <option value="1/8">Round of 16</option>
+                    <option value="1/4">Quarter-Finals</option>
+                    <option value="1/2">Semi-Finals</option>
+                    <option value="bronze">3rd Place</option>
+                    <option value="final">Final</option>
+                </select>
+            </div>
+        </div>
+        <div class="matches-table-container">
+            <table class="matches-table" id="matchesTable">
+                <thead>
+                    <tr>
+                        <th>Round</th>
+                        <th>Home</th>
+                        <th>Score</th>
+                        <th>Away</th>
+                        <th>Winner</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="matchesTableBody">
                     <!-- Populated by JavaScript -->
-                </div>
-            </header>
+                </tbody>
+            </table>
+        </div>
+    </section>
 
-            <!-- Navigation / View Control -->
-            <div class="view-controls">
-                <div class="view-tabs">
-                    <button class="tab-btn active" id="pitchTabBtn">Tactical Pitch View</button>
-                    <button class="tab-btn" id="listTabBtn">Player Ratings List</button>
-                    <button class="tab-btn" id="statsTabBtn">Match Summary</button>
-                </div>
+    <!-- ===================== MATCH DETAILS SECTION ===================== -->
+    <section class="main-section hidden" id="matchSection">
+        <div class="match-details-app">
+            <!-- Back Button -->
+            <button class="back-to-overview-btn" id="backToOverviewBtn">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" fill="currentColor"/></svg>
+                <span>Back</span>
+            </button>
+
+            <div class="app-container">
+                <!-- Sidebar: Selected Player Details -->
+                <aside class="player-sidebar" id="playerSidebar">
+                    <div class="sidebar-empty-state" id="sidebarEmptyState">
+                        <div class="empty-pitch-icon">
+                            <svg viewBox="0 0 100 100" width="80" height="80">
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-dasharray="5 5" />
+                                <line x1="5" y1="50" x2="95" y2="50" stroke="var(--text-muted)" stroke-width="2" />
+                                <circle cx="50" cy="50" r="15" fill="none" stroke="var(--text-muted)" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <h3>Select a Player</h3>
+                        <p>Click on any player on the pitch or in the list to view their detailed performance statistics and predicted ratings.</p>
+                    </div>
+                    
+                    <div class="sidebar-content hidden" id="sidebarContent">
+                        <button class="close-sidebar-btn" id="closeSidebarBtn" aria-label="Close panel">&times;</button>
+                        <div class="player-header-card">
+                            <div class="team-badge-glow" id="sidebarTeamGlow"></div>
+                            <div class="player-meta">
+                                <span class="player-number" id="sidebarPlayerNumber">#10</span>
+                                <span class="player-team-pill" id="sidebarPlayerTeam">Spain</span>
+                            </div>
+                            <h2 class="player-fullname" id="sidebarPlayerName">Lamine Yamal</h2>
+                            <p class="player-pos-role" id="sidebarPlayerRole">Forward (RW)</p>
+                        </div>
+
+                        <div class="ratings-comparison-container">
+                            <div class="rating-box match-rating">
+                                <div class="rating-circle">
+                                    <span class="rating-value" id="sidebarMatchRating">9.1</span>
+                                    <svg class="circle-svg" viewBox="0 0 100 100">
+                                        <circle class="bg" cx="50" cy="50" r="42"></circle>
+                                        <circle class="bar" cx="50" cy="50" r="42" id="matchRatingCircle"></circle>
+                                    </svg>
+                                </div>
+                                <span class="rating-label">Match Rating</span>
+                            </div>
+                            
+                            <div class="rating-box predicted-rating">
+                                <div class="rating-circle">
+                                    <span class="rating-value" id="sidebarPredictedRating">8.9</span>
+                                    <svg class="circle-svg" viewBox="0 0 100 100">
+                                        <circle class="bg" cx="50" cy="50" r="42"></circle>
+                                        <circle class="bar" cx="50" cy="50" r="42" id="predRatingCircle"></circle>
+                                    </svg>
+                                </div>
+                                <span class="rating-label">Predicted Rating</span>
+                            </div>
+                        </div>
+
+                        <div class="stats-section">
+                            <h3>Performance Stats</h3>
+                            <div class="stats-grid" id="sidebarStatsGrid">
+                                <!-- Populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Main Content Area -->
+                <main class="main-content">
+                    <!-- Header with Match Details -->
+                    <header class="match-header">
+                        <div class="match-meta-top">
+                            <span class="tournament-tag" id="matchTitle">World Cup Final</span>
+                            <span class="status-badge" id="matchStatus">Finished</span>
+                            <span class="winner-badge" id="matchWinnerBadge">👑 Winner: Spain 🇪🇸</span>
+                        </div>
+                        
+                        <div class="scoreboard">
+                            <div class="team home-team">
+                                <span class="team-flag" id="homeFlag">🇪🇸</span>
+                                <h1 class="team-name" id="homeName">Spain</h1>
+                            </div>
+                            <div class="match-score" id="matchScore">3 - 2</div>
+                            <div class="team away-team">
+                                <h1 class="team-name" id="awayName">Argentina</h1>
+                                <span class="team-flag" id="awayFlag">🇦🇷</span>
+                            </div>
+                        </div>
+
+                        <div class="match-info-bar">
+                            <div class="info-item">
+                                <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" fill="currentColor"/></svg>
+                                <span id="matchVenue">MetLife Stadium</span>
+                            </div>
+                            <div class="info-item">
+                                <svg class="icon" viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z" fill="currentColor"/></svg>
+                                <span id="matchDate">July 19, 2026</span>
+                            </div>
+                        </div>
+
+                        <!-- Match Timeline Goals -->
+                        <div class="match-goals-timeline" id="matchTimeline">
+                            <!-- Populated by JavaScript -->
+                        </div>
+                    </header>
+
+                    <!-- Navigation / View Control -->
+                    <div class="view-controls">
+                        <div class="view-tabs">
+                            <button class="tab-btn active" id="pitchTabBtn">Tactical Pitch View</button>
+                            <button class="tab-btn" id="listTabBtn">Player Ratings List</button>
+                            <button class="tab-btn" id="statsTabBtn">Match Summary</button>
+                        </div>
+                    </div>
+
+                    <!-- Pitch View -->
+                    <section class="view-section" id="pitchViewSection">
+                        <div class="pitch-container">
+                            <div class="football-pitch">
+                                <!-- Pitch Markings -->
+                                <div class="pitch-line center-line"></div>
+                                <div class="pitch-circle center-circle"></div>
+                                <div class="pitch-circle center-spot"></div>
+                                
+                                <div class="penalty-area home-penalty">
+                                    <div class="penalty-box"></div>
+                                    <div class="goal-box"></div>
+                                    <div class="penalty-arc"></div>
+                                    <div class="penalty-spot"></div>
+                                </div>
+                                
+                                <div class="penalty-area away-penalty">
+                                    <div class="penalty-box"></div>
+                                    <div class="goal-box"></div>
+                                    <div class="penalty-arc"></div>
+                                    <div class="penalty-spot"></div>
+                                </div>
+
+                                <!-- Player Nodes -->
+                                <div class="pitch-players-layer" id="pitchPlayersLayer">
+                                    <!-- Populated by JavaScript -->
+                                </div>
+                            </div>
+                            
+                            <div class="pitch-legend" id="pitchLegend">
+                                <div class="legend-item">
+                                    <span class="legend-dot home-legend"></span>
+                                    <span id="homeLegendLabel">Home Player</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-dot away-legend"></span>
+                                    <span id="awayLegendLabel">Away Player</span>
+                                </div>
+                                <div class="legend-tip">
+                                    <span>💡 Hover or tap to see ratings. Click to view detailed stats in the sidebar.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- List View -->
+                    <section class="view-section hidden" id="listViewSection">
+                        <div class="filters-card">
+                            <div class="search-box">
+                                <svg class="search-icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="currentColor"/></svg>
+                                <input type="text" id="playerSearchInput" placeholder="Search players by name...">
+                            </div>
+                            
+                            <div class="filter-groups">
+                                <div class="filter-group">
+                                    <label for="teamFilterSelect">Team</label>
+                                    <select id="teamFilterSelect">
+                                        <option value="all">All Teams</option>
+                                        <!-- Populated dynamically -->
+                                    </select>
+                                </div>
+                                
+                                <div class="filter-group">
+                                    <label for="positionFilterSelect">Position</label>
+                                    <select id="positionFilterSelect">
+                                        <option value="all">All Positions</option>
+                                        <option value="Goalkeeper">Goalkeepers</option>
+                                        <option value="Defender">Defenders</option>
+                                        <option value="Midfielder">Midfielders</option>
+                                        <option value="Forward">Forwards</option>
+                                    </select>
+                                </div>
+
+                                <div class="filter-group">
+                                    <label for="roleFilterSelect">Role</label>
+                                    <select id="roleFilterSelect">
+                                        <option value="all">Starters & Subs</option>
+                                        <option value="starters">Starters Only</option>
+                                        <option value="subs">Substitutes Only</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="table-container">
+                            <table class="ratings-table">
+                                <thead>
+                                    <tr>
+                                        <th class="sortable" data-sort="number">#</th>
+                                        <th class="sortable" data-sort="name">Player</th>
+                                        <th class="sortable" data-sort="team">Team</th>
+                                        <th class="sortable" data-sort="position">Position</th>
+                                        <th class="sortable" data-sort="predictedRating">Predicted Rating</th>
+                                        <th class="sortable active desc" data-sort="rating">Match Rating</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="ratingsTableBody">
+                                    <!-- Populated by JavaScript -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    
+                    <!-- Match Summary View -->
+                    <section class="view-section hidden" id="statsViewSection">
+                        <div class="match-stats-container">
+                            <h2>Match Statistics</h2>
+                            <div class="stats-comparison" id="matchStatsComparison">
+                                <!-- Populated by JavaScript -->
+                            </div>
+                        </div>
+                    </section>
+                </main>
             </div>
+        </div>
+    </section>
 
-            <!-- Pitch View -->
-            <section class="view-section" id="pitchViewSection">
-                <div class="pitch-container">
-                    <div class="football-pitch">
-                        <!-- Pitch Markings -->
-                        <div class="pitch-line center-line"></div>
-                        <div class="pitch-circle center-circle"></div>
-                        <div class="pitch-circle center-spot"></div>
-                        
-                        <div class="penalty-area home-penalty">
-                            <div class="penalty-box"></div>
-                            <div class="goal-box"></div>
-                            <div class="penalty-arc"></div>
-                            <div class="penalty-spot"></div>
-                        </div>
-                        
-                        <div class="penalty-area away-penalty">
-                            <div class="penalty-box"></div>
-                            <div class="goal-box"></div>
-                            <div class="penalty-arc"></div>
-                            <div class="penalty-spot"></div>
-                        </div>
+    <!-- ===================== CHAMPIONS LEAGUE SECTION ===================== -->
+    <section class="main-section hidden" id="champions_leagueSection">
+        <div class="coming-soon-card">
+            <div class="coming-soon-badge">UEFA</div>
+            <div class="coming-soon-icon">⭐</div>
+            <h1 class="coming-soon-title">Champions League</h1>
+            <p class="coming-soon-tag">Coming Soon!</p>
+            <p class="coming-soon-desc">Tournament data, predicted player ratings, and tactical pitch views for UEFA Champions League matches are under active development and will be available soon.</p>
+        </div>
+    </section>
 
-                        <!-- Player Nodes -->
-                        <div class="pitch-players-layer" id="pitchPlayersLayer">
-                            <!-- Populated by JavaScript -->
-                        </div>
-                    </div>
-                    
-                    <div class="pitch-legend">
-                        <div class="legend-item">
-                            <span class="legend-dot home-legend"></span>
-                            <span>Spain Player</span>
-                        </div>
-                        <div class="legend-item">
-                            <span class="legend-dot away-legend"></span>
-                            <span>Argentina Player</span>
-                        </div>
-                        <div class="legend-tip">
-                            <span>💡 Hover or tap to see ratings. Click to view detailed stats in the sidebar.</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    <!-- ===================== PREMIER LEAGUE SECTION ===================== -->
+    <section class="main-section hidden" id="premier_leagueSection">
+        <div class="coming-soon-card">
+            <div class="coming-soon-badge">EPL</div>
+            <div class="coming-soon-icon">🦁</div>
+            <h1 class="coming-soon-title">Premier League</h1>
+            <p class="coming-soon-tag">Coming Soon!</p>
+            <p class="coming-soon-desc">Full season standings, player performance stats, and predictive match rating models for the English Premier League will be available soon.</p>
+        </div>
+    </section>
 
-            <!-- List View -->
-            <section class="view-section hidden" id="listViewSection">
-                <div class="filters-card">
-                    <div class="search-box">
-                        <svg class="search-icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="currentColor"/></svg>
-                        <input type="text" id="playerSearchInput" placeholder="Search players by name...">
-                    </div>
-                    
-                    <div class="filter-groups">
-                        <div class="filter-group">
-                            <label for="teamFilterSelect">Team</label>
-                            <select id="teamFilterSelect">
-                                <option value="all">All Teams</option>
-                                <option value="Spain">Spain 🇪🇸</option>
-                                <option value="Argentina">Argentina 🇦🇷</option>
-                            </select>
-                        </div>
-                        
-                        <div class="filter-group">
-                            <label for="positionFilterSelect">Position</label>
-                            <select id="positionFilterSelect">
-                                <option value="all">All Positions</option>
-                                <option value="Goalkeeper">Goalkeepers</option>
-                                <option value="Defender">Defenders</option>
-                                <option value="Midfielder">Midfielders</option>
-                                <option value="Forward">Forwards</option>
-                            </select>
-                        </div>
-
-                        <div class="filter-group">
-                            <label for="roleFilterSelect">Role</label>
-                            <select id="roleFilterSelect">
-                                <option value="all">Starters & Subs</option>
-                                <option value="starters">Starters Only</option>
-                                <option value="subs">Substitutes Only</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="table-container">
-                    <table class="ratings-table">
-                        <thead>
-                            <tr>
-                                <th class="sortable" data-sort="number">#</th>
-                                <th class="sortable" data-sort="name">Player</th>
-                                <th class="sortable" data-sort="team">Team</th>
-                                <th class="sortable" data-sort="position">Position</th>
-                                <th class="sortable" data-sort="predictedRating">Predicted Rating</th>
-                                <th class="sortable active desc" data-sort="rating">Match Rating</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody id="ratingsTableBody">
-                            <!-- Populated by JavaScript -->
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-            
-            <!-- Match Summary View -->
-            <section class="view-section hidden" id="statsViewSection">
-                <div class="match-stats-container">
-                    <h2>Match Statistics</h2>
-                    <div class="stats-comparison" id="matchStatsComparison">
-                        <!-- Populated by JavaScript -->
-                    </div>
-                </div>
-            </section>
-        </main>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+        <p>Loading World Cup data...</p>
     </div>
 
     <!-- JavaScript code files -->
-    <script src="app.js?v=11"></script>
+    <script src="app.js?v=23"></script>
 </body>
 </html>

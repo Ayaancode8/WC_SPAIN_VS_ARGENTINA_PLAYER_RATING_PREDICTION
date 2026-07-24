@@ -1,0 +1,19 @@
+timeStr,type,overloadTime,eventId,homeScore,awayScore,profileUrl,isHome,fullName,playerId,card,cardDescription,VAR.pendingDecision,VAR.decision.key,VAR.decision.value,minutesAddedStr,minutesAddedKey,minutesAddedInput,halfStrShort,halfStrKey,injuredPlayerOut,substitution_name,substitution_id,substitution_profileUrl
+3,Card,,14211841.0,0,0,/players/181276/romelu-lukaku,True,Romelu Lukaku,181276.0,Yellow,,,,,,,,,,,,,
+25,VAR,,14211870.0,0,0,/players/619506/mehdi-taremi,False,,,,,False,"['var_goal_cancelled', 'offside']","['Goal ruled out', 'offside']",,,,,,,,,
+33,Card,,14211886.0,0,0,/players/505281/saeid-ezatolahi,False,Saeid Ezatolahi,505281.0,Yellow,,,,,,,,,,,,,
+45,AddedTime,,,0,0,,,,,,,,,,+ 8 minutes added,added_injury_time,8.0,,,,,,
+45,Half,,,0,0,,,,,,,,,,,,,HT,halftime_short,,,,
+46,Substitution,0.0,,0,0,,False,,,,,,,,,,,,,False,Alireza Jahanbakhsh,466890,/players/466890/alireza-jahanbakhsh
+58,Substitution,0.0,,0,0,,True,,,,,,,,,,,,,False,Timothy Castagne,465750,/players/465750/timothy-castagne
+58,Substitution,0.0,,0,0,,True,,,,,,,,,,,,,False,Hans Vanaken,203666,/players/203666/hans-vanaken
+58,Substitution,0.0,,0,0,,True,,,,,,,,,,,,,False,Dodi Lukébakio,688876,/players/688876/dodi-lukebakio
+66,Substitution,0.0,,0,0,,False,,,,,,,,,,,,,False,Milad Mohammadi,630459,/players/630459/milad-mohammadi
+66,Substitution,0.0,,0,0,,False,,,,,,,,,,,,,False,Mehdi Torabi,621519,/players/621519/mehdi-torabi
+66,Card,,14212083.0,0,0,/players/1252070/nathan-ngoy,True,Nathan Ngoy,1252070.0,Red,,,,,,,,,,,,,
+73,Substitution,0.0,,0,0,,True,,,,,,,,,,,,,False,Arthur Theate,1173250,/players/1173250/arthur-theate
+79,Substitution,0.0,,0,0,,False,,,,,,,,,,,,,False,Shahriar Moghanlou,641121,/players/641121/shahriar-moghanlou
+85,Substitution,0.0,,0,0,,False,,,,,,,,,,,,,False,Amirhossein Hosseinzadeh,1031319,/players/1031319/amirhossein-hosseinzadeh
+87,Substitution,0.0,,0,0,,True,,,,,,,,,,,,,False,Matias Fernandez-Pardo,1444231,/players/1444231/matias-fernandez-pardo
+90,AddedTime,,,0,0,,,,,,,,,,+ 5 minutes added,added_injury_time,5.0,,,,,,
+90,Half,,,0,0,,,,,,,,,,,,,FT,fulltime_short,,,,

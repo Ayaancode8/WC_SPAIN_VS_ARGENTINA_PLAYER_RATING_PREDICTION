@@ -1,0 +1,23 @@
+timeStr,type,overloadTime,eventId,homeScore,awayScore,profileUrl,isHome,ownGoal,goalDescription,isPenaltyShootoutEvent,fullName,playerId,newScore,penShootoutScore,assistStr,assistProfileUrl,assistPlayerId,assistKey,assistInput,shotmapEvent.id,shotmapEvent.eventType,shotmapEvent.teamId,shotmapEvent.playerId,shotmapEvent.playerName,shotmapEvent.x,shotmapEvent.y,shotmapEvent.min,shotmapEvent.minAdded,shotmapEvent.isBlocked,shotmapEvent.isOnTarget,shotmapEvent.blockedX,shotmapEvent.blockedY,shotmapEvent.goalCrossedY,shotmapEvent.goalCrossedZ,shotmapEvent.expectedGoals,shotmapEvent.expectedGoalsOnTarget,shotmapEvent.shotType,shotmapEvent.situation,shotmapEvent.period,shotmapEvent.isOwnGoal,shotmapEvent.onGoalShot.x,shotmapEvent.onGoalShot.y,shotmapEvent.onGoalShot.zoomRatio,shotmapEvent.isSavedOffLine,shotmapEvent.isFromInsideBox,shotmapEvent.keeperId,shotmapEvent.firstName,shotmapEvent.lastName,shotmapEvent.fullName,shotmapEvent.teamColor,minutesAddedStr,minutesAddedKey,minutesAddedInput,halfStrShort,halfStrKey,injuredPlayerOut,card,cardDescription,addedTime,penaltyScore,VAR,substitution_name,substitution_id,substitution_profileUrl
+13,Goal,,14220457.0,0,0,/players/979376/emam-ashour,False,,Header,False,Emam Ashour,979376.0,"[0, 1]",,assist by Karim Hafez,/players/560416/karim-hafez,560416.0,assist_by,Karim Hafez,2945996007.0,Goal,10255.0,979376.0,Emam Ashour,97.95614035039999,37.756,13.0,,False,True,,,36.821250000000006,0.2439999988,0.17443935573101044,0.7416465282440186,Header,SetPiece,FirstHalf,False,0.2536375661375645,0.06455026423280423,1.0,False,True,1335765.0,Emam,Ashour,Emam Ashour,#DE313C,,,,,,,,,,,,,,
+45,AddedTime,,,0,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,+ 5 minutes added,added_injury_time,5.0,,,,,,,,,,,
+45,Half,,,0,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,HT,halftime_short,,,,,,,,,
+46,Substitution,0.0,,0,1,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,True,,,,,,Kai Trewin,1101030,/players/1101030/kai-trewin
+55,Goal,,14220542.0,0,1,/players/660213/mohamed-hany,True,True,Own goal,False,Mohamed Hany,660213.0,"[1, 1]",,,,,,,2946006085.0,Goal,10255.0,660213.0,Mohamed Hany,4.5517241376,34.22875,55.0,,False,True,,,31.026249999999997,1.3034736778000002,,,Header,SetPiece,SecondHalf,True,1.7867063492063497,0.34483430629629636,1.0,False,True,1228546.0,Mohamed,Hany,Mohamed Hany,#DE313C,,,,,,,,,,,,,,
+67,Substitution,0.0,,1,1,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,,,,,,Haissem Hassan,971787,/players/971787/haissem-hassan
+67,Substitution,0.0,,1,1,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,,,,,,Hossam Abdelmaguid,1384425,/players/1384425/hossam-abdelmaguid
+74,Substitution,0.0,,1,1,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,,,,,,Ajdin Hrustic,675762,/players/675762/ajdin-hrustic
+74,Substitution,0.0,,1,1,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,,,,,,Mohamed Touré,1132069,/players/1132069/mohamed-toure
+80,Substitution,0.0,,1,1,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,True,,,,,,Trezeguet,513492,/players/513492/trezeguet
+90,AddedTime,,,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,+ 5 minutes added,added_injury_time,5.0,,,,,,,,,,,
+90,Half,,,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FT,fulltime_short,,,,,,,,,
+91,Substitution,0.0,,1,1,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,,,,,,Awer Mabil,421328,/players/421328/awer-mabil
+91,Substitution,0.0,,1,1,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,,,,,,Paul Okon-Engstler,1527363,/players/1527363/paul-okon-engstler
+104,Card,,14220642.0,1,1,/players/971787/haissem-hassan,False,,,,Haissem Hassan,971787.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Yellow,,,,,,,
+106,Substitution,0.0,,1,1,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,,,,,,Hamza Abdelkarim,1708842,/players/1708842/hamza-abdelkarim
+119,Substitution,0.0,,1,1,,True,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,,,,,,Mathew Ryan,185644,/players/185644/mathew-ryan
+120,Card,,14220710.0,1,1,/players/533403/yasser-ibrahim,False,,,,Yasser Ibrahim,533403.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Yellow,,,,,,,
+120,AddedTime,,,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,+ 1 minute added,added_injury_time,1.0,,,,,,,,,,,
+120 + 1,Substitution,1.0,,1,1,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,False,,,,,,Mahmoud Saber,1291391,/players/1291391/mahmoud-saber
+120,Half,,,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,AET,afterextratime_short,,,,,,,,,
+,PenaltyShootout,,,3,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"[2, 4]",,,,

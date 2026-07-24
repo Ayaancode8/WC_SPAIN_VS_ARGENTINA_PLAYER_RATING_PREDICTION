@@ -1,0 +1,17 @@
+timeStr,type,overloadTime,homeScore,awayScore,minutesAddedStr,minutesAddedKey,minutesAddedInput,halfStrShort,halfStrKey,profileUrl,isHome,injuredPlayerOut,eventId,ownGoal,goalDescription,isPenaltyShootoutEvent,fullName,playerId,newScore,penShootoutScore,assistStr,assistProfileUrl,assistPlayerId,assistKey,assistInput,shotmapEvent.id,shotmapEvent.eventType,shotmapEvent.teamId,shotmapEvent.playerId,shotmapEvent.playerName,shotmapEvent.x,shotmapEvent.y,shotmapEvent.min,shotmapEvent.minAdded,shotmapEvent.isBlocked,shotmapEvent.isOnTarget,shotmapEvent.blockedX,shotmapEvent.blockedY,shotmapEvent.goalCrossedY,shotmapEvent.goalCrossedZ,shotmapEvent.expectedGoals,shotmapEvent.expectedGoalsOnTarget,shotmapEvent.shotType,shotmapEvent.situation,shotmapEvent.period,shotmapEvent.isOwnGoal,shotmapEvent.onGoalShot.x,shotmapEvent.onGoalShot.y,shotmapEvent.onGoalShot.zoomRatio,shotmapEvent.isSavedOffLine,shotmapEvent.isFromInsideBox,shotmapEvent.keeperId,shotmapEvent.firstName,shotmapEvent.lastName,shotmapEvent.fullName,shotmapEvent.teamColor,card,cardDescription,substitution_name,substitution_id,substitution_profileUrl
+45,AddedTime,,0,0,+ 3 minutes added,added_injury_time,3.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+45,Half,,0,0,,,,HT,halftime_short,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+46,Substitution,0.0,0,0,,,,,,,False,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Ante Budimir,251269,/players/251269/ante-budimir
+46,Substitution,0.0,0,0,,,,,,,False,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Andrej Kramaric,173461,/players/173461/andrej-kramaric
+54,Goal,,0,0,,,,,,/players/251269/ante-budimir,False,,14213368.0,,,False,Ante Budimir,251269.0,"[0, 1]",,assist by Josip Stanisic,/players/950824/josip-stanisic,950824.0,assist_by,Josip Stanisic,2945327261.0,Goal,10155.0,251269.0,Ante Budimir,100.06896551759999,36.135000000000005,54.0,,False,True,,,36.51625,0.6934736808,0.8000975251197815,0.9943318367004395,LeftFoot,RegularPlay,SecondHalf,False,0.33432539682539697,0.18345864571428572,1.0,False,True,531913.0,Ante,Budimir,Ante Budimir,#CC3737,,,,,
+61,Card,,0,1,,,,,,/players/526710/yoel-barcenas,True,,14213376.0,,,,Yoel Bárcenas,526710.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Yellow,,,,
+72,Substitution,0.0,0,1,,,,,,,False,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Luka Sucic,959597,/players/959597/luka-sucic
+72,Substitution,0.0,0,1,,,,,,,False,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Petar Sucic,1382000,/players/1382000/petar-sucic
+77,Substitution,0.0,0,1,,,,,,,True,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Cecilio Waterman,312159,/players/312159/cecilio-waterman
+81,Substitution,0.0,0,1,,,,,,,False,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Mario Pasalic,446266,/players/446266/mario-pasalic
+83,Substitution,0.0,0,1,,,,,,,True,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Azarías Londoño,1404414,/players/1404414/azarias-londono
+90,Substitution,0.0,0,1,,,,,,,True,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Tomás Rodríguez,1054138,/players/1054138/tomas-rodriguez
+90,Substitution,0.0,0,1,,,,,,,True,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Éric Davis,503710,/players/503710/eric-davis
+90,AddedTime,,0,1,+ 7 minutes added,added_injury_time,7.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+90 + 2,Card,2.0,0,1,,,,,,/players/1382000/petar-sucic,False,,14213413.0,,,,Petar Sucic,1382000.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Yellow,,,,
+90,Half,,0,1,,,,FT,fulltime_short,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
