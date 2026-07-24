@@ -24,8 +24,10 @@ const ROUND_NAMES = {
 
 // ===================== INIT =====================
 document.addEventListener('DOMContentLoaded', () => {
+    closePlayerSidebar();
     fetchWorldCupData();
     setupNavListeners();
+    setupBracketListeners();
 });
 
 function fetchWorldCupData() {
@@ -55,6 +57,7 @@ function setupNavListeners() {
 }
 
 function switchMainTab(target) {
+    if (typeof closePlayerSidebar === 'function') closePlayerSidebar();
     currentMainTab = target;
     document.querySelectorAll('.nav-tab').forEach(t => t.classList.toggle('active', t.dataset.target === target));
     document.getElementById('overviewSection').classList.toggle('hidden', target !== 'overview');
@@ -72,6 +75,29 @@ function switchMainTab(target) {
 }
 
 // ===================== BRACKET RENDERING =====================
+function setupBracketListeners() {
+    const chips = document.querySelectorAll('.bracket-chip');
+    chips.forEach(chip => {
+        chip.addEventListener('click', () => {
+            const targetRound = chip.dataset.round;
+            chips.forEach(c => c.classList.toggle('active', c === chip));
+
+            const wrapper = document.getElementById('bracketWrapper');
+            if (!wrapper) return;
+
+            if (targetRound === 'all') {
+                wrapper.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+                const targetCol = document.querySelector(`.bracket-round[data-round-code="${targetRound}"]`);
+                if (targetCol) {
+                    const offset = targetCol.offsetLeft - 16;
+                    wrapper.scrollTo({ left: Math.max(0, offset), behavior: 'smooth' });
+                }
+            }
+        });
+    });
+}
+
 function renderBracket() {
     const container = document.getElementById('bracketContainer');
     if (!container || !wcData) return;
@@ -84,6 +110,7 @@ function renderBracket() {
         const matches = tree[roundCode] || [];
         const roundDiv = document.createElement('div');
         roundDiv.className = 'bracket-round';
+        roundDiv.dataset.roundCode = roundCode;
 
         const title = document.createElement('div');
         title.className = 'bracket-round-title';
@@ -120,13 +147,17 @@ function renderBracket() {
         roundDiv.appendChild(matchesDiv);
         container.appendChild(roundDiv);
     });
+
+    setupBracketListeners();
 }
 
-// ===================== MATCHES TABLE =====================
+// ===================== MATCHES TABLE & MOBILE CARDS =====================
 function renderMatchesTable() {
     const tbody = document.getElementById('matchesTableBody');
-    if (!tbody || !wcData) return;
-    tbody.innerHTML = '';
+    const cardsContainer = document.getElementById('matchesCardsContainer');
+    if (!wcData) return;
+    if (tbody) tbody.innerHTML = '';
+    if (cardsContainer) cardsContainer.innerHTML = '';
 
     const searchInput = document.getElementById('matchSearchInput');
     const roundSelect = document.getElementById('roundFilterSelect');
@@ -159,23 +190,60 @@ function renderMatchesTable() {
         );
     }
 
+    if (matchesList.length === 0) {
+        if (tbody) tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;padding:2rem;color:var(--text-muted)">No matches found matching criteria.</td></tr>';
+        if (cardsContainer) cardsContainer.innerHTML = '<div style="text-align:center;padding:2rem;color:var(--text-muted)">No matches found matching criteria.</div>';
+        return;
+    }
+
     matchesList.forEach(m => {
-        const tr = document.createElement('tr');
         const isTie = !m.winner || m.winner.toLowerCase() === 'tie';
         const winnerBadge = isTie
             ? `<span class="table-winner-badge tie">🤝 Draw</span>`
             : `<span class="table-winner-badge win">🏆 ${m.winner}</span>`;
 
-        tr.innerHTML = `
-            <td><span class="match-round-pill">${ROUND_NAMES[m.roundCode] || m.roundCode}</span></td>
-            <td><div class="match-team-cell"><span class="team-flag">${m.teams.home.flag}</span> ${m.teams.home.name}</div></td>
-            <td class="match-score-cell">${m.teams.home.score} - ${m.teams.away.score}</td>
-            <td><div class="match-team-cell"><span class="team-flag">${m.teams.away.flag}</span> ${m.teams.away.name}</div></td>
-            <td class="match-winner-cell">${winnerBadge}</td>
-            <td><button class="match-view-btn">View</button></td>
-        `;
-        tr.addEventListener('click', () => openMatch(m.matchId));
-        tbody.appendChild(tr);
+        // 1. Desktop Table Row
+        if (tbody) {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td><span class="match-round-pill">${ROUND_NAMES[m.roundCode] || m.roundCode}</span></td>
+                <td><div class="match-team-cell"><span class="team-flag">${m.teams.home.flag}</span> ${m.teams.home.name}</div></td>
+                <td class="match-score-cell">${m.teams.home.score} - ${m.teams.away.score}</td>
+                <td><div class="match-team-cell"><span class="team-flag">${m.teams.away.flag}</span> ${m.teams.away.name}</div></td>
+                <td class="match-winner-cell">${winnerBadge}</td>
+                <td><button class="match-view-btn">View</button></td>
+            `;
+            tr.addEventListener('click', () => openMatch(m.matchId));
+            tbody.appendChild(tr);
+        }
+
+        // 2. Mobile Match Card
+        if (cardsContainer) {
+            const card = document.createElement('div');
+            card.className = 'mobile-match-card';
+            card.innerHTML = `
+                <div class="mobile-match-header">
+                    <span class="match-round-pill">${ROUND_NAMES[m.roundCode] || m.roundCode}</span>
+                    ${winnerBadge}
+                </div>
+                <div class="mobile-match-body">
+                    <div class="mobile-match-team home">
+                        <span class="team-name">${m.teams.home.name}</span>
+                        <span class="team-flag">${m.teams.home.flag}</span>
+                    </div>
+                    <div class="mobile-match-score">${m.teams.home.score} - ${m.teams.away.score}</div>
+                    <div class="mobile-match-team away">
+                        <span class="team-flag">${m.teams.away.flag}</span>
+                        <span class="team-name">${m.teams.away.name}</span>
+                    </div>
+                </div>
+                <div class="mobile-match-footer">
+                    <span class="mobile-match-view-btn">View Details →</span>
+                </div>
+            `;
+            card.addEventListener('click', () => openMatch(m.matchId));
+            cardsContainer.appendChild(card);
+        }
     });
 }
 
@@ -192,13 +260,9 @@ function loadMatchDetails(matchId) {
 
     appState.matchInfo = match;
     appState.players = match.players || [];
-    appState.selectedPlayerId = null;
-
-    // Reset sidebar
-    const emptyState = document.getElementById('sidebarEmptyState');
-    const sidebarContent = document.getElementById('sidebarContent');
-    if (emptyState) emptyState.classList.remove('hidden');
-    if (sidebarContent) sidebarContent.classList.add('hidden');
+    
+    // Ensure sidebar is closed when opening any match
+    closePlayerSidebar();
 
     // Set dynamic team CSS colors
     document.documentElement.style.setProperty('--home-color', match.teams.home.color);
@@ -358,34 +422,72 @@ function renderTacticalPitch() {
 // ===================== PLAYER LIST TABLE =====================
 function renderListTable() {
     const tbody = document.getElementById('ratingsTableBody');
-    if (!tbody) return;
-    tbody.innerHTML = '';
+    const cardsContainer = document.getElementById('playerRatingsCardsContainer');
+    if (tbody) tbody.innerHTML = '';
+    if (cardsContainer) cardsContainer.innerHTML = '';
 
     const filtered = getFilteredSortedPlayers();
     if (filtered.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;padding:2rem;color:var(--text-muted)">No players match criteria.</td></tr>';
+        if (tbody) tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;padding:2rem;color:var(--text-muted)">No players match criteria.</td></tr>';
+        if (cardsContainer) cardsContainer.innerHTML = '<div style="text-align:center;padding:2rem;color:var(--text-muted)">No players match criteria.</div>';
         return;
     }
 
     filtered.forEach(p => {
-        const tr = document.createElement('tr');
-        tr.dataset.playerId = p.id;
-        if (appState.selectedPlayerId === p.id) tr.classList.add('selected');
-
         const rating = p.rating != null ? p.rating.toFixed(2) : '—';
         const pred = p.predictedRating != null ? p.predictedRating.toFixed(2) : '—';
+        const isHome = p.team.toLowerCase() === appState.matchInfo.teams.home.name.toLowerCase();
 
-        tr.innerHTML = `
-            <td>${p.number || '—'}</td>
-            <td><div class="table-player-name">${p.name}</div></td>
-            <td><div class="table-team-badge"><span class="badge-dot" style="background:var(--${p.team.toLowerCase() === appState.matchInfo.teams.home.name.toLowerCase() ? 'home' : 'away'}-color);box-shadow:0 0 6px var(--${p.team.toLowerCase() === appState.matchInfo.teams.home.name.toLowerCase() ? 'home' : 'away'}-color)"></span><span>${p.team}</span></div></td>
-            <td>${p.position} (${p.role})</td>
-            <td><span class="table-rating-badge pred-val">${pred}</span></td>
-            <td><span class="table-rating-badge match-val">${rating}</span></td>
-            <td><button class="table-row-btn">View Stats</button></td>
-        `;
-        tr.addEventListener('click', () => selectPlayer(p.id));
-        tbody.appendChild(tr);
+        // 1. Desktop Table Row
+        if (tbody) {
+            const tr = document.createElement('tr');
+            tr.dataset.playerId = p.id;
+            if (appState.selectedPlayerId === p.id) tr.classList.add('selected');
+
+            tr.innerHTML = `
+                <td>${p.number || '—'}</td>
+                <td><div class="table-player-name">${p.name}</div></td>
+                <td><div class="table-team-badge"><span class="badge-dot" style="background:var(--${isHome ? 'home' : 'away'}-color);box-shadow:0 0 6px var(--${isHome ? 'home' : 'away'}-color)"></span><span>${p.team}</span></div></td>
+                <td>${p.position} (${p.role})</td>
+                <td><span class="table-rating-badge pred-val">${pred}</span></td>
+                <td><span class="table-rating-badge match-val">${rating}</span></td>
+                <td><button class="table-row-btn">View Stats</button></td>
+            `;
+            tr.addEventListener('click', () => selectPlayer(p.id));
+            tbody.appendChild(tr);
+        }
+
+        // 2. Mobile Player Rating Card
+        if (cardsContainer) {
+            const card = document.createElement('div');
+            card.className = `player-rating-card ${appState.selectedPlayerId === p.id ? 'selected' : ''}`;
+            card.dataset.playerId = p.id;
+            card.innerHTML = `
+                <div class="player-card-top">
+                    <div class="player-card-meta">
+                        <span class="player-card-num">#${p.number || '—'}</span>
+                        <span class="player-card-name">${p.name}</span>
+                    </div>
+                    <span class="player-card-team-pill">${p.team}</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span class="player-card-pos">${p.position} • ${p.role}</span>
+                    <button class="table-row-btn" style="padding:0.25rem 0.6rem;font-size:0.75rem;">View Stats →</button>
+                </div>
+                <div class="player-card-ratings-row">
+                    <div class="player-card-rating-box match">
+                        <span class="player-card-rating-label">Match Rating</span>
+                        <span class="player-card-rating-val match-val">⭐ ${rating}</span>
+                    </div>
+                    <div class="player-card-rating-box">
+                        <span class="player-card-rating-label">Predicted Rating</span>
+                        <span class="player-card-rating-val pred-val">🎯 ${pred}</span>
+                    </div>
+                </div>
+            `;
+            card.addEventListener('click', () => selectPlayer(p.id));
+            cardsContainer.appendChild(card);
+        }
     });
 }
 
@@ -423,18 +525,43 @@ function getFilteredSortedPlayers() {
 }
 
 // ===================== SELECT PLAYER (SIDEBAR) =====================
+function closePlayerSidebar() {
+    const sidebar = document.getElementById('playerSidebar');
+    const backdrop = document.getElementById('sidebarBackdrop');
+    if (sidebar) sidebar.classList.remove('open');
+    if (backdrop) backdrop.classList.remove('active');
+
+    appState.selectedPlayerId = null;
+
+    const emptyState = document.getElementById('sidebarEmptyState');
+    const sidebarContent = document.getElementById('sidebarContent');
+    if (emptyState) emptyState.classList.remove('hidden');
+    if (sidebarContent) sidebarContent.classList.add('hidden');
+
+    document.querySelectorAll('.pitch-player-node').forEach(n => n.classList.remove('selected'));
+    document.querySelectorAll('#ratingsTableBody tr').forEach(r => r.classList.remove('selected'));
+    document.querySelectorAll('.player-rating-card').forEach(c => c.classList.remove('selected'));
+}
+
 function selectPlayer(playerId) {
     appState.selectedPlayerId = playerId;
 
     document.querySelectorAll('.pitch-player-node').forEach(n => n.classList.toggle('selected', parseInt(n.dataset.playerId) === playerId));
     document.querySelectorAll('#ratingsTableBody tr').forEach(r => r.classList.toggle('selected', parseInt(r.dataset.playerId) === playerId));
+    document.querySelectorAll('.player-rating-card').forEach(c => c.classList.toggle('selected', parseInt(c.dataset.playerId) === playerId));
 
     const player = appState.players.find(p => p.id === playerId);
     if (!player) return;
 
     document.getElementById('sidebarEmptyState').classList.add('hidden');
     document.getElementById('sidebarContent').classList.remove('hidden');
-    document.getElementById('playerSidebar').classList.add('open');
+    
+    const sidebar = document.getElementById('playerSidebar');
+    const backdrop = document.getElementById('sidebarBackdrop');
+    if (sidebar) sidebar.classList.add('open');
+    // Only show backdrop on mobile where the sidebar is a fullscreen overlay
+    const isMobile = window.innerWidth <= 1100;
+    if (backdrop && isMobile) backdrop.classList.add('active');
 
     document.getElementById('sidebarPlayerNumber').textContent = `#${player.number || '—'}`;
     document.getElementById('sidebarPlayerTeam').textContent = player.team;
@@ -488,19 +615,28 @@ function setupMatchDetailListeners() {
     const statsBtn = document.getElementById('statsTabBtn');
     const backBtn = document.getElementById('backToOverviewBtn');
     const closeBtn = document.getElementById('closeSidebarBtn');
+    const closeBtnMobile = document.getElementById('closeSidebarBtnMobile');
+    const mobileBackBtn = document.getElementById('mobileSidebarBackBtn');
+    const backdrop = document.getElementById('sidebarBackdrop');
 
     // Clone to remove old listeners
-    [pitchBtn, listBtn, statsBtn, backBtn, closeBtn].forEach(el => {
+    [pitchBtn, listBtn, statsBtn, backBtn, closeBtn, closeBtnMobile, mobileBackBtn, backdrop].forEach(el => {
         if (!el) return;
         const clone = el.cloneNode(true);
         el.parentNode.replaceChild(clone, el);
     });
 
-    document.getElementById('pitchTabBtn').addEventListener('click', () => activateMatchSubTab('pitch'));
-    document.getElementById('listTabBtn').addEventListener('click', () => activateMatchSubTab('list'));
-    document.getElementById('statsTabBtn').addEventListener('click', () => activateMatchSubTab('stats'));
-    document.getElementById('backToOverviewBtn').addEventListener('click', () => switchMainTab('overview'));
-    document.getElementById('closeSidebarBtn').addEventListener('click', () => document.getElementById('playerSidebar').classList.remove('open'));
+    document.getElementById('pitchTabBtn').addEventListener('click', () => { closePlayerSidebar(); activateMatchSubTab('pitch'); });
+    document.getElementById('listTabBtn').addEventListener('click', () => { closePlayerSidebar(); activateMatchSubTab('list'); });
+    document.getElementById('statsTabBtn').addEventListener('click', () => { closePlayerSidebar(); activateMatchSubTab('stats'); });
+    document.getElementById('backToOverviewBtn').addEventListener('click', () => { closePlayerSidebar(); switchMainTab('overview'); });
+    
+    // Close sidebar listeners
+    const closeHandlers = ['closeSidebarBtn', 'closeSidebarBtnMobile', 'mobileSidebarBackBtn', 'sidebarBackdrop'];
+    closeHandlers.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.addEventListener('click', closePlayerSidebar);
+    });
 
     // Player list filters
     const setupFilter = (id, stateKey) => {

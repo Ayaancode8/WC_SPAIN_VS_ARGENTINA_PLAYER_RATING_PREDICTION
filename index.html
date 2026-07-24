@@ -49,6 +49,20 @@
             <h1 class="section-title">Knockout Bracket</h1>
             <p class="section-subtitle">Round of 32 to World Cup Final — click any match to view details</p>
         </div>
+
+        <!-- Mobile Round Selector Pills & Swipe Hint -->
+        <div class="bracket-round-selector" id="bracketRoundSelector">
+            <button class="bracket-chip active" data-round="all">All Rounds</button>
+            <button class="bracket-chip" data-round="1/16">Round of 32</button>
+            <button class="bracket-chip" data-round="1/8">Round of 16</button>
+            <button class="bracket-chip" data-round="1/4">Quarter-Finals</button>
+            <button class="bracket-chip" data-round="1/2">Semi-Finals</button>
+            <button class="bracket-chip" data-round="final">Final</button>
+        </div>
+        <div class="bracket-mobile-hint">
+            <span>👈 Swipe to view knockout rounds 👉</span>
+        </div>
+
         <div class="bracket-wrapper" id="bracketWrapper">
             <div class="bracket-container" id="bracketContainer">
                 <!-- Populated by JavaScript -->
@@ -100,6 +114,9 @@
                 </tbody>
             </table>
         </div>
+        <div class="matches-cards-container" id="matchesCardsContainer">
+            <!-- Populated by JavaScript for Mobile View -->
+        </div>
     </section>
 
     <!-- ===================== MATCH DETAILS SECTION ===================== -->
@@ -111,9 +128,19 @@
                 <span>Back</span>
             </button>
 
+            <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
             <div class="app-container">
                 <!-- Sidebar: Selected Player Details -->
                 <aside class="player-sidebar" id="playerSidebar">
+                    <div class="sidebar-mobile-nav">
+                        <button class="mobile-sidebar-back-btn" id="mobileSidebarBackBtn">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+                            </svg>
+                            <span>Back to Lineup</span>
+                        </button>
+                        <button class="close-sidebar-btn" id="closeSidebarBtnMobile" aria-label="Close panel">&times;</button>
+                    </div>
                     <div class="sidebar-empty-state" id="sidebarEmptyState">
                         <div class="empty-pitch-icon">
                             <svg viewBox="0 0 100 100" width="80" height="80">
@@ -320,6 +347,9 @@
                                     <!-- Populated by JavaScript -->
                                 </tbody>
                             </table>
+                        </div>
+                        <div class="player-cards-container" id="playerRatingsCardsContainer">
+                            <!-- Populated by JavaScript for Mobile View -->
                         </div>
                     </section>
                     
