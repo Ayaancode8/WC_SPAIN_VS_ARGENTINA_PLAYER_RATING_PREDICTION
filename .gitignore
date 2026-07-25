@@ -12,3 +12,10 @@ build_ratings.py
 Argentina_vs_Spain_statsP.csv
 Match_events_AGvsSp.csv
 app.py
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
