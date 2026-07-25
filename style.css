@@ -183,7 +183,7 @@ body {
 .player-number {
     font-size: 1.1rem;
     font-weight: 700;
-    color: var(--accent-gold);
+    color: var(--text-contrast);
 }
 
 .player-team-pill {
@@ -350,7 +350,7 @@ body {
 .tournament-tag {
     font-size: 0.85rem;
     font-weight: 600;
-    color: var(--accent-gold);
+    color: var(--text-contrast);
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
@@ -472,7 +472,7 @@ body {
 }
 
 .timeline-goal-min {
-    color: var(--accent-gold);
+    color: var(--text-contrast);
     font-weight: 700;
 }
 
@@ -957,13 +957,13 @@ body {
 .ratings-table th.sortable.active.asc::after {
     content: '↑';
     opacity: 1;
-    color: var(--accent-gold);
+    color: var(--text-contrast);
 }
 
 .ratings-table th.sortable.active.desc::after {
     content: '↓';
     opacity: 1;
-    color: var(--accent-gold);
+    color: var(--text-contrast);
 }
 
 .ratings-table tbody tr {
@@ -1018,13 +1018,13 @@ body {
 
 .table-rating-badge.match-val {
     background: rgba(245, 158, 11, 0.15);
-    color: var(--accent-gold);
+    color: var(--text-contrast);
     border: 1px solid rgba(245, 158, 11, 0.25);
 }
 
 .table-rating-badge.pred-val {
     background: rgba(56, 189, 248, 0.15);
-    color: var(--arg-blue);
+    color: var(--text-contrast);
     border: 1px solid rgba(56, 189, 248, 0.25);
 }
 
@@ -1049,7 +1049,7 @@ body {
 
 .ratings-table tbody tr.selected .table-row-btn {
     border-color: var(--accent-gold);
-    color: var(--accent-gold);
+    color: var(--text-contrast);
     background-color: rgba(245, 158, 11, 0.05);
 }
 
@@ -1103,7 +1103,7 @@ body {
     gap: 0.5rem;
     background: rgba(201, 162, 39, 0.12);
     border: 1px solid rgba(201, 162, 39, 0.3);
-    color: var(--accent-gold);
+    color: var(--text-contrast);
     font-family: var(--font-outfit);
     font-size: 0.85rem;
     font-weight: 700;
@@ -1256,7 +1256,7 @@ body {
 }
 
 .away-val {
-    color: var(--arg-blue);
+    color: var(--text-contrast);
 }
 
 .stat-comp-bars {
@@ -1295,7 +1295,7 @@ body {
 .navbar-tabs { display: flex; gap: 0.25rem; background: rgba(255,255,255,0.03); border: 1px solid var(--card-border); padding: 0.25rem; border-radius: 0.6rem; }
 .nav-tab { display: flex; align-items: center; gap: 0.45rem; background: transparent; border: none; color: var(--text-secondary); padding: 0.5rem 1.2rem; font-family: var(--font-outfit); font-size: 0.85rem; font-weight: 600; cursor: pointer; border-radius: 0.4rem; transition: var(--transition-quick); }
 .nav-tab:hover { color: var(--text-contrast); }
-.nav-tab.active { background: rgba(201,162,39,0.12); color: var(--accent-gold); border: 1px solid rgba(201,162,39,0.2); }
+.nav-tab.active { background: rgba(201,162,39,0.12); color: var(--text-contrast); border: 1px solid rgba(201,162,39,0.2); }
 .nav-tab svg { opacity: 0.7; }
 .nav-tab.active svg { opacity: 1; }
 
@@ -1339,7 +1339,7 @@ body {
 }
 .bracket-chip.active {
     background: rgba(201, 162, 39, 0.15);
-    color: var(--accent-gold);
+    color: var(--text-contrast);
     border-color: rgba(201, 162, 39, 0.35);
     box-shadow: 0 0 10px rgba(201, 162, 39, 0.15);
 }
@@ -1362,7 +1362,7 @@ body {
 }
 .bracket-round-title {
     text-align: center; font-size: 0.75rem; font-weight: 700; text-transform: uppercase;
-    letter-spacing: 0.08em; color: var(--accent-gold); margin-bottom: 0.75rem;
+    letter-spacing: 0.08em; color: var(--text-contrast); margin-bottom: 0.75rem;
     padding: 0.4rem 0.6rem; background: rgba(201,162,39,0.08); border: 1px solid rgba(201,162,39,0.15);
     border-radius: 0.4rem;
 }
@@ -1384,8 +1384,8 @@ body {
 .bracket-team-flag { font-size: 1rem; width: 1.2rem; text-align: center; }
 .bracket-team-name { flex: 1; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--text-secondary); }
 .bracket-team-score { font-weight: 700; min-width: 1.2rem; text-align: center; color: var(--text-muted); }
-.bracket-team-row.winner .bracket-team-name { color: var(--accent-gold); font-weight: 700; }
-.bracket-team-row.winner .bracket-team-score { color: var(--accent-gold); }
+.bracket-team-row.winner .bracket-team-name { color: var(--text-contrast); font-weight: 700; }
+.bracket-team-row.winner .bracket-team-score { color: var(--text-contrast); }
 
 /* ===================== MATCHES TABLE ===================== */
 .matches-filters-bar {
@@ -1419,13 +1419,13 @@ body {
 .matches-table tbody tr:hover { background: rgba(255,255,255,0.02); }
 .match-round-pill {
     display: inline-block; font-size: 0.75rem; font-weight: 600; padding: 0.2rem 0.6rem;
-    border-radius: 10rem; background: rgba(201,162,39,0.1); color: var(--accent-gold);
+    border-radius: 10rem; background: rgba(201,162,39,0.1); color: var(--text-contrast);
     border: 1px solid rgba(201,162,39,0.2);
 }
 .match-team-cell { display: flex; align-items: center; gap: 0.5rem; font-weight: 500; }
 .match-team-cell .team-flag { font-size: 1.2rem; }
 .match-score-cell { font-weight: 700; font-size: 1rem; text-align: center; color: var(--text-contrast); }
-.match-winner-cell { font-weight: 600; color: var(--accent-gold); font-size: 0.85rem; }
+.match-winner-cell { font-weight: 600; color: var(--text-contrast); font-size: 0.85rem; }
 .match-view-btn {
     background: transparent; border: 1px solid var(--card-border); color: var(--text-secondary);
     padding: 0.3rem 0.7rem; border-radius: 0.4rem; font-family: var(--font-outfit);
@@ -1510,7 +1510,7 @@ body {
     gap: 0.3rem;
     font-size: 0.8rem;
     font-weight: 600;
-    color: var(--accent-gold);
+    color: var(--text-contrast);
     background: rgba(201, 162, 39, 0.08);
     border: 1px solid rgba(201, 162, 39, 0.2);
     padding: 0.35rem 0.8rem;
@@ -1702,7 +1702,7 @@ body {
 .player-card-num {
     font-size: 0.9rem;
     font-weight: 800;
-    color: var(--accent-gold);
+    color: var(--text-contrast);
 }
 .player-card-name {
     font-size: 1.05rem;
@@ -1752,10 +1752,10 @@ body {
     font-weight: 800;
 }
 .player-card-rating-val.match-val {
-    color: var(--accent-gold);
+    color: var(--text-contrast);
 }
 .player-card-rating-val.pred-val {
-    color: var(--arg-blue);
+    color: var(--text-contrast);
 }
 
 /* ===================== WINNER BADGE ===================== */
@@ -1771,7 +1771,7 @@ body {
 }
 .winner-badge.highlight-winner {
     background: rgba(201, 162, 39, 0.15);
-    color: #C9A227;
+    color: var(--text-contrast);
     border: 1px solid rgba(201, 162, 39, 0.4);
     box-shadow: 0 0 12px rgba(201, 162, 39, 0.2);
 }
@@ -1792,7 +1792,7 @@ body {
 }
 .table-winner-badge.win {
     background: rgba(201, 162, 39, 0.12);
-    color: #C9A227;
+    color: var(--text-contrast);
     border: 1px solid rgba(201, 162, 39, 0.3);
 }
 .table-winner-badge.tie {
@@ -1829,7 +1829,7 @@ body {
     font-size: 0.75rem;
     font-weight: 800;
     letter-spacing: 1.5px;
-    color: var(--accent-gold);
+    color: var(--text-contrast);
 }
 .coming-soon-icon {
     font-size: 4rem;
