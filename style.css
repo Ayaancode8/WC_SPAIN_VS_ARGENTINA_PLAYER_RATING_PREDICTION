@@ -913,6 +913,94 @@ body {
     backdrop-filter: blur(10px);
 }
 
+/* Mobile Player Ratings Cards View Base Styles */
+.player-cards-container {
+    display: none;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.player-rating-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 1rem;
+    padding: 1rem 1.1rem;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    transition: var(--transition-quick);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.player-rating-card:hover, .player-rating-card.selected {
+    border-color: var(--accent-gold);
+    background: rgba(201, 162, 39, 0.05);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+.player-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.player-card-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.player-card-num {
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: var(--text-contrast);
+}
+.player-card-name {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-contrast);
+}
+.player-card-team-pill {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.2rem 0.55rem;
+    border-radius: 12px;
+    border: 1px solid var(--card-border);
+}
+.player-card-pos {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+.player-card-ratings-row {
+    display: flex;
+    gap: 0.75rem;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 0.6rem 0.85rem;
+    border-radius: 0.6rem;
+}
+.player-card-rating-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+.player-card-rating-box.match {
+    border-right: 1px solid rgba(255, 255, 255, 0.06);
+}
+.player-card-rating-label {
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.2rem;
+}
+.player-card-rating-val {
+    font-size: 1rem;
+    font-weight: 700;
+}
+.player-card-rating-val.match-val { color: var(--accent-gold); }
+.player-card-rating-val.pred-val { color: var(--accent-cyan); }
+
 .ratings-table {
     width: 100%;
     border-collapse: collapse;
@@ -1162,8 +1250,47 @@ body {
     }
     
     .main-content {
-        padding: 1.5rem;
+        padding: 1rem;
     }
+
+    /* Filters card responsive */
+    .filters-card {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1rem;
+        gap: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .search-box {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .filter-groups {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .filter-group {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .filter-group select {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Player Ratings Table vs Cards on Mobile */
+    .table-container { display: none !important; }
+    .player-cards-container { display: flex !important; flex-direction: column; gap: 0.75rem; }
 }
 
 @media (max-width: 768px) {
@@ -1666,97 +1793,6 @@ body {
     .pitch-legend { flex-direction: column; gap: 0.5rem; align-items: center; text-align: center; }
 }
 
-/* Mobile Player Ratings Cards View */
-.player-cards-container {
-    display: none;
-    flex-direction: column;
-    gap: 0.75rem;
-}
-.player-rating-card {
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 1rem;
-    padding: 1rem 1.1rem;
-    backdrop-filter: blur(10px);
-    cursor: pointer;
-    transition: var(--transition-quick);
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-}
-.player-rating-card:hover, .player-rating-card.selected {
-    border-color: var(--accent-gold);
-    background: rgba(201, 162, 39, 0.05);
-    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
-}
-.player-card-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.player-card-meta {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-.player-card-num {
-    font-size: 0.9rem;
-    font-weight: 800;
-    color: var(--text-contrast);
-}
-.player-card-name {
-    font-size: 1.05rem;
-    font-weight: 700;
-    color: var(--text-contrast);
-}
-.player-card-team-pill {
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: var(--text-secondary);
-    background: rgba(255, 255, 255, 0.05);
-    padding: 0.2rem 0.55rem;
-    border-radius: 12px;
-    border: 1px solid var(--card-border);
-}
-.player-card-pos {
-    font-size: 0.8rem;
-    color: var(--text-muted);
-    font-weight: 500;
-}
-.player-card-ratings-row {
-    display: flex;
-    gap: 0.75rem;
-    background: rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    padding: 0.6rem 0.85rem;
-    border-radius: 0.6rem;
-}
-.player-card-rating-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
-}
-.player-card-rating-box.match {
-    border-right: 1px solid rgba(255, 255, 255, 0.06);
-}
-.player-card-rating-label {
-    font-size: 0.7rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: var(--text-secondary);
-    letter-spacing: 0.04em;
-}
-.player-card-rating-val {
-    font-size: 1.25rem;
-    font-weight: 800;
-}
-.player-card-rating-val.match-val {
-    color: var(--text-contrast);
-}
-.player-card-rating-val.pred-val {
-    color: var(--text-contrast);
-}
 
 /* ===================== WINNER BADGE ===================== */
 .winner-badge {

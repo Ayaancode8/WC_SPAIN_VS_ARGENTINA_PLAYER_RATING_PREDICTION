@@ -261,6 +261,18 @@ function loadMatchDetails(matchId) {
     appState.matchInfo = match;
     appState.players = match.players || [];
     
+    // Reset filters state to default
+    appState.filters = { search: '', team: 'all', position: 'all', role: 'all' };
+    appState.sort = { field: 'rating', order: 'desc' };
+
+    // Reset filter DOM controls
+    const searchInput = document.getElementById('playerSearchInput');
+    const posSelect = document.getElementById('positionFilterSelect');
+    const roleSelect = document.getElementById('roleFilterSelect');
+    if (searchInput) searchInput.value = '';
+    if (posSelect) posSelect.value = 'all';
+    if (roleSelect) roleSelect.value = 'all';
+
     // Ensure sidebar is closed when opening any match
     closePlayerSidebar();
 
@@ -479,11 +491,11 @@ function renderListTable() {
                 <div class="player-card-ratings-row">
                     <div class="player-card-rating-box match">
                         <span class="player-card-rating-label">Match Rating</span>
-                        <span class="player-card-rating-val match-val">⭐ ${rating}</span>
+                        <span class="player-card-rating-val match-val">${rating}</span>
                     </div>
                     <div class="player-card-rating-box">
                         <span class="player-card-rating-label">Predicted Rating</span>
-                        <span class="player-card-rating-val pred-val">🎯 ${pred}</span>
+                        <span class="player-card-rating-val pred-val">${pred}</span>
                     </div>
                 </div>
             `;
@@ -503,11 +515,17 @@ function getFilteredSortedPlayers() {
     }
     if (f.team && f.team !== 'all') {
         const t = f.team.trim().toLowerCase();
-        result = result.filter(p => (p.team || '').trim().toLowerCase() === t);
+        result = result.filter(p => {
+            const pTeam = (p.team || '').trim().toLowerCase();
+            return pTeam === t || pTeam.includes(t) || t.includes(pTeam);
+        });
     }
     if (f.position && f.position !== 'all') {
         const pos = f.position.trim().toLowerCase();
-        result = result.filter(p => (p.position || '').trim().toLowerCase() === pos);
+        result = result.filter(p => {
+            const pPos = (p.position || '').trim().toLowerCase();
+            return pPos === pos || pPos.includes(pos) || pos.includes(pPos);
+        });
     }
     if (f.role === 'starters') {
         result = result.filter(p => p.isStarter);
