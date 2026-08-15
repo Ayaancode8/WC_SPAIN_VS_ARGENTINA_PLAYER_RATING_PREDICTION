@@ -426,6 +426,8 @@ function renderListTable() {
     if (tbody) tbody.innerHTML = '';
     if (cardsContainer) cardsContainer.innerHTML = '';
 
+    if (!appState.matchInfo) return;
+
     const filtered = getFilteredSortedPlayers();
     if (filtered.length === 0) {
         if (tbody) tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;padding:2rem;color:var(--text-muted)">No players match criteria.</td></tr>';
@@ -436,7 +438,7 @@ function renderListTable() {
     filtered.forEach(p => {
         const rating = p.rating != null ? p.rating.toFixed(2) : '—';
         const pred = p.predictedRating != null ? p.predictedRating.toFixed(2) : '—';
-        const isHome = p.team.toLowerCase() === appState.matchInfo.teams.home.name.toLowerCase();
+        const isHome = appState.matchInfo && p.team.toLowerCase() === appState.matchInfo.teams.home.name.toLowerCase();
 
         // 1. Desktop Table Row
         if (tbody) {
@@ -468,7 +470,7 @@ function renderListTable() {
                         <span class="player-card-num">#${p.number || '—'}</span>
                         <span class="player-card-name">${p.name}</span>
                     </div>
-                    <span class="player-card-team-pill">${p.team}</span>
+                    <span class="player-card-team-pill" style="background:var(--${isHome ? 'home' : 'away'}-color);color:#fff;padding:0.2rem 0.6rem;border-radius:1rem;font-size:0.72rem;font-weight:700;">${p.team}</span>
                 </div>
                 <div style="display:flex;justify-content:space-between;align-items:center;">
                     <span class="player-card-pos">${p.position} • ${p.role}</span>
